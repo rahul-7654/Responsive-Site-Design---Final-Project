@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+}
+header {
+    height: 100%; 
+    padding-top:270px;
+    padding-left: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/Brightness_Contrast\ 1\ copy.jpg");
+}
+.nav-background {
+    background: #B8B9BB0D 0% 0% no-repeat padding-box;
+    box-shadow: 17px 27px 101px #00000030;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0;
+    border-radius: 0;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+.text-center {
+    text-align: center!important;
+}
+.text-left {
+    text-align: left!important;
+}
+.headerText {
+    color: white;
+}
+.navbar-nav>li {
+    padding-right: 20px;
+}
+.headerLongText {
+    width: 450px;
+}
+
