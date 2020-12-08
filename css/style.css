@@ -31,10 +31,82 @@ header {
 .headerText {
     color: white;
 }
-.navbar-nav>li {
-    padding-right: 20px;
-}
 .headerLongText {
     width: 450px;
 }
 
+.featureSection {
+    text-align: center;
+    color: white;
+    padding: 70px 200px;
+    background-color: #000000;
+}
+.features {
+    margin-top: 20px;
+}
+.feature {
+    text-align: center;
+    color: white;
+    background-color: #0D0D0D;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #0D0D0D;
+    margin-right: 3px;
+    width: 300px;
+    height: 230px;
+}
+.description {
+    padding-top: 30px;
+    text-align: center;
+}
+.description p {
+    width: 240px;
+    justify-content: center;
+    word-wrap: break-word;
+}
+h2 {
+    color: #3C34D1;
+}
+.detailExplorer {
+    color: white;
+    padding: 70px 200px;
+    background-color: #000000;  
+}
+.detailHeading {
+    padding-top: 10px;
+    color: #2A2693
+}
+.detailText {
+    width: 100%;
+}
+.playExplore {
+    color: white;
+    padding: 70px 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/play-explore-bg.jpg");
+}
+.playExploreText {
+    width: 300px;
+    word-wrap: break-word;
+    justify-content: center;
+}
+.playExplorerCard {
+    border-radius: 5px;
+    border: 1px solid #0D0D0D;
+    float:left;
+    width: 300px;
+    height: 370px;
+}
+.products {
+    text-align: center;
+    padding: 70px 200px;
+    background-color: #000000;
+    color: white;
+}
+.leftProductCard {
+    border-radius: 5px;
+    border: 1px solid #0D0D0D;
+    background-color: #0D0D0D;
+    width: 100%;
+}
