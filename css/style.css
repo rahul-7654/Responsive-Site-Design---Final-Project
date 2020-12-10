@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
 }
-header {
+#homeHeader {
     height: 100%; 
     padding-top:270px;
     padding-left: 20px;
@@ -9,6 +9,15 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../images/Brightness_Contrast\ 1\ copy.jpg");
+}
+#productsHeader {
+    height: 100%; 
+    padding-top:270px;
+    padding-left: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/products/bg.png");
 }
 .nav-background {
     background: #B8B9BB0D 0% 0% no-repeat padding-box;
@@ -27,6 +36,9 @@ header {
 }
 .text-left {
     text-align: left!important;
+}
+.text-right {
+    text-align: right!important;
 }
 .headerText {
     color: white;
@@ -120,10 +132,17 @@ h2 {
     padding: 15px;
 }
 .productCard {
-    /* width: 100%; */
     padding: 15px;
     height: 194px;
     margin-bottom: 10px;
+    border: 1px solid #0D0D0D;
+    background: #1D1E20 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+.products-card {
+    padding: 25px;
+    height: 220px;
     border: 1px solid #0D0D0D;
     background: #1D1E20 0% 0% no-repeat padding-box;
     border-radius: 10px;
@@ -259,4 +278,70 @@ footer li a{
     background-repeat: no-repeat;
     background-image: url('../images/blog2.jpg');
     margin-bottom: 10px;
+}
+
+.productSection {
+    color: white;
+    padding: 10px 200px;
+    background-color: #000000;
+}
+.specifications {
+    color: white;
+    padding: 30px 200px;
+    background-color: #000000;
+}
+.pc-powered {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/products/pc-powered.png');
+}
+.lenses {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/products/lenses.png');
+}
+.headband {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/products/headband.png');
+}
+.pc-powered-text {
+    padding-top: 100px;
+}
+.storage {
+    height: 485px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/products/storage.png');
+}
+.productDetail {
+    height: 470px;
+    background: #0D0D0D 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+.buy-now {
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-bottom: 1px solid #3E2DDD;
+    background-color: #3E2DDD;
+    position:absolute;
+    bottom:0;
+    width: 94%
+}
+.btnMemory {
+    background-color: black;
+    color: white;
+}
+.p20 {
+    padding: 20px;
+}
+.spec-card {
+    padding: 25px;
+    background: #0D0D0D 0% 0% no-repeat padding-box;
+    border-radius: 10px;
 }
