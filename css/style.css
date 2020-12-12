@@ -345,3 +345,42 @@ footer li a{
     background: #0D0D0D 0% 0% no-repeat padding-box;
     border-radius: 10px;
 }
+
+#appsContainer {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10% 10% 2% 10%;
+}
+
+.category {
+    text-align: center;
+    color: white;
+    background-color: #0D0D0D;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #0D0D0D;
+} 
+.featuredCard {
+    float:left;
+    width: 300px;
+    height: 370px;
+}
+.honor {
+    background: #0D0D0D;
+    border-radius: 10px;
+}
+.honorPic {
+    height: 350px;
+    width: 99%;
+    border-radius: 10px 0px 0px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/video.jpg');
+}
+.p0 {
+    padding: 0px;
+}
+.mt20 {
+    margin-top: 20px;
+}
