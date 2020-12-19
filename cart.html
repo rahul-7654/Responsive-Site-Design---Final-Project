@@ -1,220 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header id="devHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-left">
-            <h1>Devlopers</h1>
-            <div class="text-wrap headerLongText">
-                Create new experiences for a new reality. Find all the tools and 
-                resources you need to learn, build and publish to Magic Leap World
-            </div>
-            <div class="headerButtons">
-                <button class="btn btn-join" type="submit">JOIN DEVELOPER PROGRAM</button>
-              </div>
-          </div>
-        </div>         
-      </div>
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                  <a href="./products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Apps & Games</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#"><img src="./images/search.png"></a></li>
-              <li><a href="#"><img src="./images/cart.png"></a></li>
-          </ul>
-        </div>		
-      </div>     
-    </nav>
+    <title>XReality: Cart</title>
+</head>
 
-    <main id="appsContainer">
-        <div class="container-fluid portal">
+<body class="bg-dark1">
+
+    <!--Navigation bar-->
+
+    <section class="section">
+        <div class="container">
             <div class="row">
-                <h2 class="text-center">Welcome to the Developer Portal</h2>
-                <p>
-                    The mobile era of computing was constrained by closed ecosystems. With mixed reality, 
-                    the third wave of computing should be #open.
-                </p>
+                <div class="col-lg-7 col-md-12">
+                    <div class="card bg-dark1 mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img class="img-responsive flex-fill" src="/images/cart/Cart-item-1.png" alt="cart-item">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">Oculus Quest 2</h3>
+                                    <p class="card-text">Includes: VR Headset, Pair of Touch Controllers, 5 Meter Headset Cable, Mini DisplayPort(TM) to DisplayPort(TM) Adapter.</p>
+
+                                    <p class="text-muted">Estimated delivery: Wed, Jan 13</p>
+
+                                    <p class="fst-italic"><small class="text-muted">Facebook account and Oculus-ready PC required for use. Ages 13 and above. California resident: Prop 65 warning. Terms of Service and Data Policy.</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card mb-3 bg-dark2">
+                        <div class="card-body m-4">
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="card-text">
+                                    <h5>Subtotal</h5>
+                                </div>
+                                <h5>399.00 USD</h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center py-2">
+                                <div class="card-text">
+                                    <h5>Savings</h5>
+                                </div>
+                                <h6>-100.00 USD</h6>
+                            </div>
+                            <h6 class="pt-4 pb-2"><a href="#" class="text-decoration-none">Add Promo Code</a></h6>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center pt-4">
+                                <div class="card-text">
+                                    <h5>Total</h5>
+                                </div>
+                                <h5 class="text-primary">$299.00 USD</h5>
+                            </div>
+                            <p class="text-muted">Taxes and fees will be calculated at checkout.</p>
+
+                            <a href="#" class="btn btn-primary btn-lg btn-block w-100">
+                                <h4 class="font-weight-light">Check Out </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row features">
+        </div>
+    </section>
+
+<!--   Delivery Sevice card-->
+    <section class="section">
+        <div class="container">
+            <div class="row">
                 <div class="col-sm-4">
-                    <div class="portalCard">
-                        <img src="./images/development/Learn.png"/>
-                        <div class="description">
-                          <h4>Learn</h4>
-                          <p>Explore docs and guides that will help you awaken magical new experiences.</p>
-                          LEARN MORE
+                    <div class="card bg-dark1">
+                        <img class="mx-3" src="images/cart/delivery.png" alt="Free Shipping" width="80" height="62" >
+                        <div class="card-body ">
+                            <h2 class="card-title">Free Shipping</h2>
+                            <p class="card-text text-muted">Get free delivery and returns.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="portalCard">
-                        <img src="./images/development/Build.png"/>
-                        <div class="description">
-                          <h4>Build</h4>
-                          <p>Discover all the tools you'll need to create new worlds within our world.</p>
-                          LEARN MORE
+                    <div class="card bg-dark1">
+                        <img class="mx-3" src="images/cart/guarantee.png" alt="Invasion Warranty" width="65" height="63">
+                        <div class="card-body">
+                            <h2 class="card-title">Invasion Warranty</h2>
+                            <p class="card-text text-muted">Defect and malfunction coverage.</p>
                         </div>
                     </div>
-                </div>              
+                </div>
                 <div class="col-sm-4">
-                    <div class="portalCard">
-                      <img src="./images/development/Publish.png"/>
-                      <div class="description">
-                        <h4>Publish</h4>
-                        <p>Ready to share your creations? Publish to Magic Leap World.</p>
-                        LEARN MORE
-                      </div>  
+                    <div class="card bg-dark1">
+                        <img class="mx-3" src="images/cart/calendar.png" alt="Try Worry-Free" width="65" height="65">
+                        <div class="card-body">
+                            <h2 class="card-title">Try Worry-Free</h2>
+                            <p class="card-text text-muted">Fast and easy return within 30 days.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt20">
-                <div class="col-sm-6 text-left">
-                    <h2>Become a Published Developer</h2>
-                    <p>
-                        Individual Developers no longer have to be a legal entity to publish content in Magic Leap World.
-                        Bring your dreams to life by registering as a Publisher and bring your experiences 
-                        to Magic Leap World today.
-                    </p>
-                    <button type="button" class="btn btn-secondary">JOIN US</button>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <img src="./images/development/developer.png" width='350px' height="350px">
-                </div>
-            </div>
-            <div class="row mt20">
-                <div class="col-sm-6 text-left">
-                    <img src="./images/development/developer.png" width='350px' height="350px">
-                </div>
-                <div class="col-sm-6 text-left">
-                    <h2>Real-time 3D experiences</h2>
-                    <p>
-                        Get started with the most widely used real-time 3D platform. Create mixed-reality line of business apps from CAD and BIM design data by 
-                        pairing Unity’s enhanced benefits with PiXYZ Plugin.
-                    </p>
-                    <button type="button" class="btn btn-secondary">DOWNLOAD NOW</button>
-                </div>
-            </div>
+        </div>
+    </section>
+    
+<!--Footer-->
+    
+</body>
 
-            <div class="row mt20">
-                <div class="col-sm-12">
-                    <h2>Azure mixed reality services</h2>
-                    <p>Create for the intelligent cloud and intelligent edge</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class='dev-service1'>
-                        <h3>Azure Remote Rendering</h3>
-                      <p>Render high-quality interactive content and stream it to your devices in real time.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class='dev-service2'>
-                    <h3>Azure Object Anchors</h3>
-                    <p>Align and anchor 3D content to physical objects.</p>
-                  </div>
-              </div>
-              </div>
-        </div>
-    </main>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container-fluid footerBg">
-            <div class="row">
-              <div class="col-sm-12">
-                <img src="./images/logo.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="footerCard">              
-                  <p>See new ways to work better together with the ultimate extended</p>
-                  +1 (111) 000-1010 <br>
-                  San Francisco <br>
-                  1 Sansome Street, Suite 3500 – PMB# 21819<br>
-                  San Francisco, CA 94104
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p> User Links</p>
-                  <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">Services</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p>Have queries? Send them over!</p>
-                   <input type="text" placeholder="Email"/>
-                   <textarea rows="3" col="200" placeholder="Message"></textarea>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="container-fluid copyright">
-            <div class="row">
-              <div class="col-sm-4 text-left">
-                <div class="socialIcons"><img src="./images/fb.png"></div>
-                <div class="socialIcons"><img src="./images/linkedin.png"></div>
-                <div class="socialIcons"><img src="./images/twitter.png"></div>
-              </div>
-              <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </footer>
-  </body>
 </html>

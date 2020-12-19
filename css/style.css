@@ -1,5 +1,18 @@
 body, html {
     height: 100%;
+    color: white;
+}
+
+.section{
+padding: 100px 0;    
+}
+
+.bg-dark1{
+    background-color: #010103;
+}
+
+.bg-dark2{
+    background-color: #0D0D0D; 
 }
 #homeHeader {
     height: 100%; 
@@ -77,9 +90,7 @@ body, html {
     justify-content: center;
     word-wrap: break-word;
 }
-h2 {
-    color: #3C34D1;
-}
+
 .detailExplorerBg {
     background-color: #000000; 
     background-size: contain;
@@ -455,20 +466,6 @@ footer a:visited{
     padding: 20% 10% 2% 10%;
 }
 
-/*Support*/
-#supportHeader {
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('../images/support/Industry-banner.jpg');
-    opacity: 1;
-    padding: 20% 10% 2% 10%;
-}
-
-/*Support end*/
-
 .btn-join{
     width: 230px;
     box-shadow: 0px 6px 94px #375AE854;
@@ -511,3 +508,31 @@ footer a:visited{
     height: 300px;
     margin-bottom: 10px;
 }
+
+/*Support*/
+#supportHeader {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/support/Industry-banner.jpg');
+    opacity: 1;
+    padding:10% 0; 
+}
+
+#contactus-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/support/contact%20bg.jpg');
+
+}
+
+.flat-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+.flat-btn a:hover{
+    color: #4239E7;
+    
+}
+
+/*Support end*/
