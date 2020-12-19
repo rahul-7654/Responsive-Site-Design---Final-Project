@@ -1,75 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <!--Bootstrap CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header id="homeHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-left headerText">
-            <p>ALL YOUR BASE BELONG TO US</p>
-            <h1>Getting your head in the game</h1>
-            <div class="text-wrap headerLongText">
-              We keep current with all the relevant hardware from mobile VR, AR and XR experience
-              to the most current and cutting edge.
-            </div>
-            <div class="headerButtons">
-              <button class="btn btn-primary" type="submit">SHOP NOW</button>
-              <button type="button" class="btn btn-secondary">LEARN MORE</button>
-            </div>
-          </div>
-        </div>         
-      </div>
-    </header>
-    <!-- <nav class="navbar navbar-expand-sm sticky-top navbar-light nav-background"> -->
+	<!--External CSS-->
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!--Banner-->
+	<header id="homeHeader">
+		<div class="container">
+        	<div class="row">
+        		<div class="col-12 text-left headerText">
+						<p>ALL YOUR BASE BELONG TO US</p>
+            			<h1>Getting your head in the game</h1>
+            		<div class="text-wrap headerLongText">
+						We keep current with all the relevant hardware from mobile VR, AR and XR experience to the most current and cutting edge.
+					</div>
+            		<div class="headerButtons">
+						<button class="btn btn-primary" type="submit">SHOP NOW</button>
+              			<button type="button" class="btn btn-secondary">LEARN MORE</button>
+            		</div>
+          		</div>
+        	</div>         
+		</div>
+	</header>
+    <!--Navigation bar-->
     <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
-      <div class="container">
+		<div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            	<span class="sr-only">Toggle navigation</span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+            	<span class="icon-bar"></span>
+          	</button>
+          	<a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo"></a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                  <a href="./products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Apps & Games</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#"><img src="./images/search.png"></a></li>
-              <li><a href="#"><img src="./images/cart.png"></a></li>
-          </ul>
-        </div>		
-      </div>     
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+			
+			<ul class="nav navbar-nav navbar-right">
+              	<li><a href="products.html">Products</a></li>
+				<li><a href="apps-games.html">Apps &amp; Games</a></li>
+              	<li><a href="industry.html">Industry</a></li>
+				<li><a href="development.html">Development</a></li>
+              	<li><a href="support.html">Support</a></li>
+				<li><a href="#"><img src="./images/search.png"></a></li>
+              	<li><a href="cart.html"><img src="./images/cart.png"></a></li>
+			</ul>
+		</div>		
+      	</div>     
     </nav>
+	<!--Main-->
     <main>
         <div class="container-fluid featureSection">
             <div class="row">
@@ -112,7 +98,7 @@
             <div class="row">
               <div class="col-sm-6">
                 <small>EXPLORE EVERY NEW DETAIL</small><br>
-                <h2>Work Smarter and Were it with Ease & Comfort</h2>
+                <h2>Work Smarter and Were it with Ease &amp; Comfort</h2>
                 <p style="width:300px; word-wrap:break-word;">It offers the most comfortable and immersive mixed reality experience available, 
                   with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, 
                   security, and scalability of the cloud and AI services.</p>
@@ -366,60 +352,55 @@
             </div>
         </div>
     </main>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container-fluid footerBg">
-            <div class="row">
-              <div class="col-sm-12">
-                <img src="./images/logo.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="footerCard">              
-                  <p>See new ways to work better together with the ultimate extended</p>
-                  +1 (111) 000-1010 <br>
-                  San Francisco <br>
-                  1 Sansome Street, Suite 3500 – PMB# 21819<br>
-                  San Francisco, CA 94104
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p> User Links</p>
-                  <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">Services</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p>Have queries? Send them over!</p>
-                   <input type="text" placeholder="Email"/>
-                   <textarea rows="3" col="200" placeholder="Message"></textarea>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="container-fluid copyright">
-            <div class="row">
-              <div class="col-sm-4 text-left">
-                <div class="socialIcons"><img src="./images/fb.png"></div>
-                <div class="socialIcons"><img src="./images/linkedin.png"></div>
-                <div class="socialIcons"><img src="./images/twitter.png"></div>
-              </div>
-              <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+	<!--Footer-->
+	<footer>
+		<div class="container-fluid">
+        	<div class="row">
+				<div class="container-fluid footerBg">
+					<div class="row footLogo">
+						<div class="col-sm-12">
+							<img src="./images/logo.png">
+              			</div>
+            		</div>
+            		<div class="row">
+						<div class="col-sm-4">
+							<div class="halfOpacity">              
+								<p>See new ways to work better together with the ultimate extended</p>
+								<p class="footPhone">+1 (111) 000-1010</p> <br>
+								<p class="footAddress">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
+                			</div>
+              			</div>
+              			<div class="col-sm-4 secondCol">
+							<h3>User Links</h3>
+							<a href="products.html" class="halfOpacity">Products</a><br>
+							<a href="apps-games.html" class="halfOpacity">Apps &amp; Games</a><br>
+              				<a href="industry.html" class="halfOpacity">Industry</a><br>
+							<a href="development.html" class="halfOpacity">Development</a><br>
+              				<a href="support.html" class="halfOpacity">Support</a>
+              			</div>
+              			<div class="col-sm-4">
+							<h3>Have queries? Send them over!</h3>
+                   			<input type="text" class="footTextbox" placeholder="Email"/><br>
+                   			<textarea rows="5" col="200" class="footTextbox" placeholder="Message"></textarea>
+              			</div> 
+            		</div>
+				</div>
+			</div>
+        	<div class="row">
+				<div class="container-fluid copyright">
+					<div class="row">
+						<div class="col-sm-4 text-left">
+							<div class="socialIcons"><img src="./images/fb.png"></div>
+                			<div class="socialIcons"><img src="./images/linkedin.png"></div>
+                			<div class="socialIcons"><img src="./images/twitter.png"></div>
+						</div>
+              			<div class="col-sm-8 text-left">
+							<i>Created by Ruchi Singh, Divyarajsinh Jhala, Rahul Chaudhari &#10003; &nbsp;All Rights Reserved.&nbsp;2020</i>
+						</div>
+            		</div>
+				</div>
+			</div>
+		</div>
     </footer>
-  </body>
+</body>
 </html>
