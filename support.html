@@ -1,218 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header id="supportHeader">
-        <div class="container">
-            <div class="row">
-                <div class="justify-content-center text-light text-center">
-                    <h1>How can we help?</h1>
-                    <div class="">
-                        Create new experiences for a new reality. Find all the tools and
-                        resources you need to learn, build and publish to Magic Leap World
-                    </div>
-                   <input class="form-control form-control-lg " type="text" placeholder=".form-control-lg">
-                </div>
-            </div>
-        </div>
-    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+
+<body>
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="./products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Apps & Games</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#"><img src="./images/search.png"></a></li>
+                    <li><a href="#"><img src="./images/cart.png"></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                  <a href="./products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Apps & Games</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#"><img src="./images/search.png"></a></li>
-              <li><a href="#"><img src="./images/cart.png"></a></li>
-          </ul>
-        </div>		
-      </div>     
     </nav>
-
-    <main id="appsContainer">
-        <div class="container-fluid portal">
+    
+<!--    Banner -->
+    <section id="supportHeader" class="">
+        <div class="container section ">
             <div class="row">
-                <h2 class="text-center">Welcome to the Developer Portal</h2>
-                <p>
-                    The mobile era of computing was constrained by closed ecosystems. With mixed reality, 
-                    the third wave of computing should be #open.
-                </p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-4">
-                    <div class="portalCard">
-                        <img src="./images/development/Learn.png"/>
-                        <div class="description">
-                          <h4>Learn</h4>
-                          <p>Explore docs and guides that will help you awaken magical new experiences.</p>
-                          LEARN MORE
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="portalCard">
-                        <img src="./images/development/Build.png"/>
-                        <div class="description">
-                          <h4>Build</h4>
-                          <p>Discover all the tools you'll need to create new worlds within our world.</p>
-                          LEARN MORE
-                        </div>
-                    </div>
-                </div>              
-                <div class="col-sm-4">
-                    <div class="portalCard">
-                      <img src="./images/development/Publish.png"/>
-                      <div class="description">
-                        <h4>Publish</h4>
-                        <p>Ready to share your creations? Publish to Magic Leap World.</p>
-                        LEARN MORE
-                      </div>  
-                    </div>
-                </div>
-            </div>
-            <div class="row mt20">
-                <div class="col-sm-6 text-left">
-                    <h2>Become a Published Developer</h2>
-                    <p>
-                        Individual Developers no longer have to be a legal entity to publish content in Magic Leap World.
-                        Bring your dreams to life by registering as a Publisher and bring your experiences 
-                        to Magic Leap World today.
-                    </p>
-                    <button type="button" class="btn btn-secondary">JOIN US</button>
-                </div>
-                <div class="col-sm-6 text-center">
-                    <img src="./images/development/developer.png" width='350px' height="350px">
-                </div>
-            </div>
-            <div class="row mt20">
-                <div class="col-sm-6 text-left">
-                    <img src="./images/development/developer.png" width='350px' height="350px">
-                </div>
-                <div class="col-sm-6 text-left">
-                    <h2>Real-time 3D experiences</h2>
-                    <p>
-                        Get started with the most widely used real-time 3D platform. Create mixed-reality line of business apps from CAD and BIM design data by 
-                        pairing Unity’s enhanced benefits with PiXYZ Plugin.
-                    </p>
-                    <button type="button" class="btn btn-secondary">DOWNLOAD NOW</button>
-                </div>
-            </div>
+                <div class="d-flex text-center justify-content-center my-5">
+                    <form class="w-50 ">
+                    <h2>How can we help?</h2>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
 
-            <div class="row mt20">
-                <div class="col-sm-12">
-                    <h2>Azure mixed reality services</h2>
-                    <p>Create for the intelligent cloud and intelligent edge</p>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class='dev-service1'>
-                        <h3>Azure Remote Rendering</h3>
-                      <p>Render high-quality interactive content and stream it to your devices in real time.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class='dev-service2'>
-                    <h3>Azure Object Anchors</h3>
-                    <p>Align and anchor 3D content to physical objects.</p>
-                  </div>
-              </div>
-              </div>
         </div>
-    </main>
+    </section>
+
+<!--    Support cards-->
+    <section class="section bg-dark1">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Apps</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Developer</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Device</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Help Us Improve</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Community Support</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4">
+                        <img class="img-fluid mx-auto " src="images/support/Mobile%20apps-bro.png" width="200px">
+                        <div class="card-body text-white">
+                            <h3 class="text-center my-4">Service & Repairs</h3>
+                            <p class="card-text text-center">App connects experiences on your device with everyday devices, workflows, and data</p>
+                            <div class="text-center mb-2">
+                                <a href="#" class="flat-btn">Browse articles ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    FAQ-->
+    <section class="section bg-dark1">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h2>Welcome to Support for business</h2>
+                    <p>We provide support from small to large business enterprise.</p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="mt-5">How can I publish my applications to Magic Leap World?</h5>
+                        <p class="my-3">The Magic Leap Mobile App connects experiences on your Magic Leap device with everyday devices, workflows,…</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+
+                        <h5 class="mt-5">Magic Leap Getting Started</h5>
+                        <p class="my-3">Congratulations on your Magic Leap purchase! It's great to have you on board. You are probably ...</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+
+                        <h5 class="mt-5">How can I view my order status?</h5>
+                        <p class="my-3">The Magic Leap Mobile App connects experiences on your Magic Leap device with everyday devices, workflows,…</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+                    </div>
+
+                    <div class="col-6">
+                        <h5 class="mt-5">I need delivery outside the U.S. Is this possible?</h5>
+                        <p class="my-3">Yes. At this time, customers in the United Kingdom, France, Germany, Italy, and Spain can place...</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+
+                        <h5 class="mt-5">What is the Magic Leap Mobile App?</h5>
+                        <p class="my-3">The Magic Leap Mobile App connects experiences on your Magic Leap device with everyday devices, workflows,...</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+
+                        <h5 class="mt-5">What is RapidReplace?</h5>
+                        <p class="my-3">If you have purchased RapidReplace, it provides our customers with a replacement service that allows...</p>
+                        <div class="mb-2"><a href="#">Learn more ></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--    Contact us form -->
+    <section class="section bg-dark1" id="contactus-bg">
+        <div class="d-flex col justify-content-center">
+            <div class="row w-50">
+                <div class="card-body bg-dark2 rounded-3 p-5">
+                    <form>
+                        <h3 class="mb-4">Don’t shy to Contact us.</h3>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Your Name" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" placeholder="Your E-mail" aria-label="default input example">
+                        </div>
+                        <div class="mb-3">
+
+                            <textarea class="form-control" type="text" placeholder="Message" aria-label="default input example" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Send Help</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Location-Map-->
+    <img src="/images/support/map.jpg" class="img-fluid w-100" alt="location">
+<!--Location-Map -- End-->
+    
     <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container-fluid footerBg">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-12">
-                <img src="./images/logo.png">
-              </div>
+                <div class="container-fluid footerBg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="./images/logo.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p>See new ways to work better together with the ultimate extended</p>
+                                +1 (111) 000-1010 <br>
+                                San Francisco <br>
+                                1 Sansome Street, Suite 3500 – PMB# 21819<br>
+                                San Francisco, CA 94104
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p> User Links</p>
+                                <ul>
+                                    <li><a href="">Products</a></li>
+                                    <li><a href="">Industry</a></li>
+                                    <li><a href="">Development</a></li>
+                                    <li><a href="">Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p>Have queries? Send them over!</p>
+                                <input type="text" placeholder="Email" />
+                                <textarea rows="3" col="200" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-              <div class="col-sm-4">
-                <div class="footerCard">              
-                  <p>See new ways to work better together with the ultimate extended</p>
-                  +1 (111) 000-1010 <br>
-                  San Francisco <br>
-                  1 Sansome Street, Suite 3500 – PMB# 21819<br>
-                  San Francisco, CA 94104
+                <div class="container-fluid copyright">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+                            <div class="socialIcons"><img src="./images/fb.png"></div>
+                            <div class="socialIcons"><img src="./images/linkedin.png"></div>
+                            <div class="socialIcons"><img src="./images/twitter.png"></div>
+                        </div>
+                        <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p> User Links</p>
-                  <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">Services</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p>Have queries? Send them over!</p>
-                   <input type="text" placeholder="Email"/>
-                   <textarea rows="3" col="200" placeholder="Message"></textarea>
-                </div>
-              </div> 
             </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="container-fluid copyright">
-            <div class="row">
-              <div class="col-sm-4 text-left">
-                <div class="socialIcons"><img src="./images/fb.png"></div>
-                <div class="socialIcons"><img src="./images/linkedin.png"></div>
-                <div class="socialIcons"><img src="./images/twitter.png"></div>
-              </div>
-              <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
     </footer>
-  </body>
+</body>
+
 </html>
