@@ -420,9 +420,15 @@ footer a:visited{
     border: 1px solid #0D0D0D;
 } 
 
-category:hover{
-    background-color: red;
+.category a{
+    color: white;
 }
+
+.category a:hover{
+    color: #4239E7;
+}
+
+
 .featuredCard {
     float:left;
     width: 300px;
