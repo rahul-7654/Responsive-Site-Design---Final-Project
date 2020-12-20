@@ -2,11 +2,9 @@ body, html {
     height: 100%;
     color: white;
 }
-
 .section{
-padding: 100px 0;    
+	padding: 100px 0;    
 }
-
 .bg-dark1{
     background-color: #010103;
 }
@@ -32,7 +30,7 @@ padding: 100px 0;
     background-size: cover;
     background-image: url("../images/products/bg.png");
 }
-
+/*Navigation*/
 .nav-background {
     background: #B8B9BB0D 0% 0% no-repeat padding-box;
     box-shadow: 17px 27px 101px #00000030;
@@ -41,19 +39,12 @@ padding: 100px 0;
     -webkit-backdrop-filter: blur(5px);
     border: 0;
     border-radius: 0;
+	color: #ffffff;
 }
 .navbar-inverse .navbar-nav>li>a{
     color: white;
 }
-.text-center {
-    text-align: center!important;
-}
-.text-left {
-    text-align: left!important;
-}
-.text-right {
-    text-align: right!important;
-}
+/*Navigation*/
 .headerText {
     color: white;
 }
@@ -235,11 +226,7 @@ padding: 100px 0;
 .footerBg {
     color: white;
     padding-top: 50px;
-    padding-bottom: 30px; 
-	padding-right: 190px;
-	padding-left: 190px;
     background: #191919 0% 0% no-repeat padding-box;
-	width: 100%;
 }
 .footLogo{
 	padding-bottom: 20px;
@@ -263,44 +250,52 @@ padding: 100px 0;
 li {
     list-style: none;
 }
-footer a{
-	opacity: 0.5;
+footer li a{
 	line-height: 35px;
 }
-footer a:hover{
-	color:white;
-	opacity: 0.5;
+footer li a:hover{
+	color:#9A95F3;
+	text-decoration: none;
 }
 footer a:visited{
 	color:white;
+	opacity: 0.5;
 }
 .footTextbox{
 	background: #333333 0% 0% no-repeat padding-box;
 	border-radius: 4px;
 	opacity: 1;
 	margin-bottom: 10px;
-	width: 100%;
+	width: 80%;
 	font-size: 16px;
 	padding-left: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 .copyright {
-    padding: 5px 200px;
-    height: 50px;
+    padding-top: 15px;
+	padding-right: 200px;
+	padding-left: 200px;  
     background: #0D0D0D 0% 0% no-repeat padding-box;
+	height: 70px;
 }
 .socialIcons {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    float:left;
-    padding-left: 13px;
-    padding-top: 10px;
-    margin-right: 3px;
-    background: #191919 0% 0% no-repeat padding-box;
+    height: 35px;
+	width: 38px;
+	padding: 10px;
+	border-radius: 10px;
+    background: #0D0D0D 0% 0% no-repeat padding-box;
 }
-
+.footNames{
+	padding-top: 8px;
+}
+.footFirst{
+	margin-bottom: 20px;
+}
+.footColor{
+	color: #4239e7;
+}
+/*Footer*/
 .devBg {
     background-color: #000000; 
     background-size: cover;

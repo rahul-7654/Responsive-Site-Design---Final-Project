@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>XReality</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Bootstrap CDN-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<!--External CSS-->
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<!--Banner-->
-	<header id="homeHeader">
-		<div class="container">
-        	<div class="row">
-        		<div class="col-12 text-left headerText">
-						<p>ALL YOUR BASE BELONG TO US</p>
-            			<h1>Getting your head in the game</h1>
-            		<div class="text-wrap headerLongText">
-						We keep current with all the relevant hardware from mobile VR, AR and XR experience to the most current and cutting edge.
-					</div>
-            		<div class="headerButtons">
-						<button class="btn btn-primary" type="submit">SHOP NOW</button>
-              			<button type="button" class="btn btn-secondary">LEARN MORE</button>
-            		</div>
-          		</div>
-        	</div>         
-		</div>
-	</header>
-    <!--Navigation bar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
+	<!--Navigation bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400" role="navigation">
 		<div class="container">
         <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -49,12 +33,30 @@
               	<li><a href="industry.html">Industry</a></li>
 				<li><a href="development.html">Development</a></li>
               	<li><a href="support.html">Support</a></li>
-				<li><a href="#"><img src="./images/search.png"></a></li>
               	<li><a href="cart.html"><img src="./images/cart.png"></a></li>
 			</ul>
 		</div>		
       	</div>     
     </nav>
+	<!--Navigation bar-->
+	<!--Banner-->
+	<header id="homeHeader">
+		<div class="container">
+        	<div class="row">
+        		<div class="col-12 text-left headerText">
+						<p>ALL YOUR BASE BELONG TO US</p>
+            			<h1>Getting your head in the game</h1>
+            		<div class="text-wrap headerLongText">
+						We keep current with all the relevant hardware from mobile VR, AR and XR experience to the most current and cutting edge.
+					</div>
+            		<div class="headerButtons">
+						<button class="btn btn-primary" type="submit">SHOP NOW</button>
+              			<button type="button" class="btn btn-secondary">LEARN MORE</button>
+            		</div>
+          		</div>
+        	</div>         
+		</div>
+	</header>
 	<!--Main-->
     <main>
         <div class="container-fluid featureSection">
@@ -323,7 +325,7 @@
               </div>
               <div class="col-sm-8">              
                 <div class="row">
-                    <img src="./images/video.jpg" width="630px">
+<!--                    <img src="./images/video.jpg" width="630px">-->
                 </div>
               </div>
             </div>
@@ -352,55 +354,70 @@
             </div>
         </div>
     </main>
-	<!--Footer-->
-	<footer>
-		<div class="container-fluid">
-        	<div class="row">
-				<div class="container-fluid footerBg">
-					<div class="row footLogo">
-						<div class="col-sm-12">
-							<img src="./images/logo.png">
-              			</div>
-            		</div>
-            		<div class="row">
-						<div class="col-sm-4">
-							<div class="halfOpacity">              
-								<p>See new ways to work better together with the ultimate extended</p>
-								<p class="footPhone">+1 (111) 000-1010</p> <br>
-								<p class="footAddress">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
-                			</div>
-              			</div>
-              			<div class="col-sm-4 secondCol">
-							<h3>User Links</h3>
-							<a href="products.html" class="halfOpacity">Products</a><br>
-							<a href="apps-games.html" class="halfOpacity">Apps &amp; Games</a><br>
-              				<a href="industry.html" class="halfOpacity">Industry</a><br>
-							<a href="development.html" class="halfOpacity">Development</a><br>
-              				<a href="support.html" class="halfOpacity">Support</a>
-              			</div>
-              			<div class="col-sm-4">
-							<h3>Have queries? Send them over!</h3>
-                   			<input type="text" class="footTextbox" placeholder="Email"/><br>
-                   			<textarea rows="5" col="200" class="footTextbox" placeholder="Message"></textarea>
-              			</div> 
-            		</div>
-				</div>
-			</div>
-        	<div class="row">
-				<div class="container-fluid copyright">
-					<div class="row">
-						<div class="col-sm-4 text-left">
-							<div class="socialIcons"><img src="./images/fb.png"></div>
-                			<div class="socialIcons"><img src="./images/linkedin.png"></div>
-                			<div class="socialIcons"><img src="./images/twitter.png"></div>
-						</div>
-              			<div class="col-sm-8 text-left">
-							<i>Created by Ruchi Singh, Divyarajsinh Jhala, Rahul Chaudhari &#10003; &nbsp;All Rights Reserved.&nbsp;2020</i>
-						</div>
-            		</div>
-				</div>
-			</div>
-		</div>
-    </footer>
+	<!-- Footer -->
+	<footer class="bg-light text-left text-lg-start footerBg" role="footer">
+		<!-- Grid container -->
+  		<div class="container p-4 footFirst">
+    		<!--Grid row-->
+    		<div class="row my-4">
+				
+      			<!--Grid column-->
+      			<div class="col-lg-5 col-md-12 mb-6 mb-md-0">
+        			<img src="./images/logo.png" class="footLogo">
+					<div class="halfOpacity">              
+						<p>See new ways to work better together with the ultimate extended</p>
+						<p class="footPhone">+1 (111) 000-1010</p> <br>
+						<p class="footAddress">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
+					</div>
+					<div>
+						<img src="./images/fb.png" class="socialIcons">
+						<img src="./images/linkedin.png" class="socialIcons">
+						<img src="./images/twitter.png" class="socialIcons">
+					</div><br>
+      			</div>
+      			<!--Grid column-->
+
+      			<!--Grid column-->
+      			<div class="col-lg-3 col-md-6 mb-4 mb-md-0 secondCol">
+        			<h5 class="text-uppercase">User Links</h5>
+					
+        			<ul class="list-unstyled mb-0">
+          				<li><a href="products.html" class="halfOpacity">Products</a></li>
+						<li><a href="apps-games.html" class="halfOpacity">Apps &amp; Games</a></li>
+						<li><a href="industry.html" class="halfOpacity">Industry</a></li>
+						<li><a href="development.html" class="halfOpacity">Development</a></li>
+						<li><a href="support.html" class="halfOpacity">Support</a></li>
+        			</ul><br>
+      			</div>
+      			<!--Grid column-->
+
+      			<!--Grid column-->
+      			<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        			<h5 class="text-uppercase mb-0">Have queries? Send them over!</h5>
+
+        			<input type="text" class="footTextbox" placeholder="Email"/><br>
+					<textarea rows="5" col="200" class="footTextbox" placeholder="Message"></textarea>
+      			</div>
+      			<!--Grid column-->
+    		</div>
+    		<!--Grid row-->
+  		</div>
+  		<!-- Grid container -->
+		
+		<!-- Grid container -->
+  		<div class="container-fluid text-center p-4 copyright">
+    		<!--Grid row-->
+    		<div class="row">
+      			<!--Grid column-->
+      			<div class="">
+					<p class="footNames">Created by <span class="footColor">Ruchi Singh, Divyarajsinh Jhala, Rahul Chaudhari</span> &#10003; &nbsp;All Rights Reserved.&nbsp;2020</p>
+      			</div>
+      			<!--Grid column-->
+    		</div>
+    		<!--Grid row-->
+  		</div>
+  		<!-- Grid container -->
+	</footer>
+	<!-- Footer -->
 </body>
 </html>
