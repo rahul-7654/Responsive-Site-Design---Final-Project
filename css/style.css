@@ -192,14 +192,25 @@ padding: 100px 0;
 .headerButtons {
     margin-top: 20px;
 }
+
+.btn{
+    margin-right: 15px;
+    padding:12px 35px;
+    text-transform: uppercase;
+}
 .btn-primary {
-    width: 140px;
     background: transparent linear-gradient(318deg, #4C55FD 0%, #3E2DDD 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 6px 94px #375AE854;
+    box-shadow: 0px 6px 30px #375ae81f;
+    border-radius: 4px #4239E7;
+}
+.btn-primary:hover{
+    background: transparent linear-gradient(315deg, #4C55FD 0%, #3E2DDD 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 84px #375ae85e;
     border-radius: 4px;
     opacity: 1;
-    margin-right: 5px;
 }
+
+
 .btn-secondary {
     width: 140px;
     background: #FFFFFF00 0% 0% no-repeat padding-box;
@@ -445,25 +456,24 @@ footer a:visited{
     background-repeat: no-repeat;
     background-image: url('../images/apps-games/body-vr.png');
 }
-#indHeaderContainer {
-    width: 100vw;
-    height: 100vh;
-    color: white;
+
+/*industry*/
+#indHeader {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../images/industry/banner.png');
-    padding: 20% 10% 2% 10%;
+    opacity: 1;
+    padding:10% 0;
 }
 
+/*Devlopment*/
+
 #devHeader {
-    width: 100vw;
-    height: 100vh;
-    color: white;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../images/development/banner.png');
     opacity: 1;
-    padding: 20% 10% 2% 10%;
+    padding:10% 0;
 }
 
 .btn-join{
