@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>XReality: Apps &amp; Games</title>
+</head>
+
+<body class="bg-dark1">
+
+    <section class="section">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/apps-games/banner.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/apps-games/banner.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/apps-games/banner.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="mb-5">Categories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <div class="card category text-center">
+                            <h3><a href="#" class="stretched-link text-decoration-none">New Released</a></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
     <header id="appsContainer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="banner"></div>
-          </div>
-        </div>         
-      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner"></div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                  <a href="./products.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Apps & Games</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#"><img src="./images/search.png"></a></li>
-              <li><a href="#"><img src="./images/cart.png"></a></li>
-          </ul>
-        </div>		
-      </div>     
-    </nav>
 
     <main id="appsContainer">
         <!-- CATEGORIES -->
@@ -79,7 +86,7 @@
                     <div class="category">
                         <h4>Top Selling</h4>
                     </div>
-                </div>            
+                </div>
                 <div class="col-sm-3">
                     <div class="category">
                         <h4>Upcoming</h4>
@@ -99,27 +106,27 @@
                 <h3 class="text-left">Featured & Recommended</h3>
             </div>
             <div class="row">
-              <div class="col-sm-4">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/featured1.png" width="300px">
-                  <strong>The Witcher</strong><br>
-                  <small>$29.99 USD</small>
+                <div class="col-sm-4">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/featured1.png" width="300px">
+                        <strong>The Witcher</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/featured2.png" width="300px">
-                  <strong>Doom</strong><br>
-                  <small>$29.99 USD</small>
+                <div class="col-sm-4">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/featured2.png" width="300px">
+                        <strong>Doom</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
                 </div>
-            </div>              
-            <div class="col-sm-4">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/featured3.png" width="300px">
-                  <strong>Red Dead Redemption 2</strong><br>
-                  <small>$29.99 USD</small>
+                <div class="col-sm-4">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/featured3.png" width="300px">
+                        <strong>Red Dead Redemption 2</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
@@ -129,32 +136,32 @@
                 <h3 class="text-left">Top Selling</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/top-selling1.png"><br>
-                  <strong>Assassin's Creed</strong><br>
-                  <small>$29.99 USD</small>
-                </div>
-                </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/top-selling2.png"><br>
-                    <strong>God of War</strong><br>
-                    <small>$29.99 USD</small>
-                    </div>
-                </div>              
-                <div class="col-sm-3">
-                    <div class="featuredCard">
-                    <img src="./images/apps-games/top-selling3.png"><br>
-                    <strong>Call of Duty</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/top-selling1.png"><br>
+                        <strong>Assassin's Creed</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/top-selling4.png"><br>
-                    <strong>Hitman</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/top-selling2.png"><br>
+                        <strong>God of War</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/top-selling3.png"><br>
+                        <strong>Call of Duty</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/top-selling4.png"><br>
+                        <strong>Hitman</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
             </div>
@@ -169,8 +176,8 @@
                 <div class="col-sm-4">
                     <h4>Medal of Honor: <br>Above and Beyond</h4>
                     <p>
-                        Charge into history. As you complete your tour of duty across WWII Europe, 
-                        you'll collaborate with the French Resistance and work to sabotage Nazi 
+                        Charge into history. As you complete your tour of duty across WWII Europe,
+                        you'll collaborate with the French Resistance and work to sabotage Nazi
                         operations from behind enemy lines.
                     </p>
                     <button type="button" class="btn btn-secondary">READ MORE</button>
@@ -184,32 +191,32 @@
                 <h3 class="text-left">The Multiplayer and Social</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/mp-social1.png"><br>
-                  <strong>Cyberpunk 2077</strong><br>
-                  <small>$29.99 USD</small>
-                </div>
-                </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/mp-social2.png"><br>
-                    <strong>FIFA 20</strong><br>
-                    <small>$29.99 USD</small>
-                    </div>
-                </div>              
-                <div class="col-sm-3">
-                    <div class="featuredCard">
-                    <img src="./images/apps-games/mp-social3.png"><br>
-                    <strong>UFC 3</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/mp-social1.png"><br>
+                        <strong>Cyberpunk 2077</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/mp-social4.png"><br>
-                    <strong>Dota 2</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/mp-social2.png"><br>
+                        <strong>FIFA 20</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/mp-social3.png"><br>
+                        <strong>UFC 3</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/mp-social4.png"><br>
+                        <strong>Dota 2</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
             </div>
@@ -221,32 +228,32 @@
                 <h3 class="text-left">Action & Adventure</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/action1.png"><br>
-                  <strong>Horizon</strong><br>
-                  <small>$29.99 USD</small>
-                </div>
-                </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/action2.png"><br>
-                    <strong>The Evil Within 2</strong><br>
-                    <small>$29.99 USD</small>
-                    </div>
-                </div>              
-                <div class="col-sm-3">
-                    <div class="featuredCard">
-                    <img src="./images/apps-games/action3.png"><br>
-                    <strong>Beat Saber</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/action1.png"><br>
+                        <strong>Horizon</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/action4.png"><br>
-                    <strong>Beat Saber</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/action2.png"><br>
+                        <strong>The Evil Within 2</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/action3.png"><br>
+                        <strong>Beat Saber</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/action4.png"><br>
+                        <strong>Beat Saber</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
             </div>
@@ -258,32 +265,32 @@
                 <h3 class="text-left">Travle The World</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/travel-world1.png"><br>
-                  <strong>Chernobyl VR</strong><br>
-                  <small>$29.99 USD</small>
-                </div>
-                </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/travel-world2.png"><br>
-                    <strong>Atlas Obscura VR</strong><br>
-                    <small>$29.99 USD</small>
-                    </div>
-                </div>              
-                <div class="col-sm-3">
-                    <div class="featuredCard">
-                    <img src="./images/apps-games/travel-world3.png"><br>
-                    <strong>National Geographic</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/travel-world1.png"><br>
+                        <strong>Chernobyl VR</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/travel-world4.png"><br>
-                    <strong>360 Stories</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/travel-world2.png"><br>
+                        <strong>Atlas Obscura VR</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/travel-world3.png"><br>
+                        <strong>National Geographic</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/travel-world4.png"><br>
+                        <strong>360 Stories</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
             </div>
@@ -298,9 +305,9 @@
                 <div class="col-sm-4">
                     <h4>The Body VR</h4>
                     <p>
-                        Travel through the bloodstream and discover how blood cells work to 
-                        spread oxygen throughout the body. Enter one of the billions of living 
-                        cells inside our body and learn how the organelles work together to 
+                        Travel through the bloodstream and discover how blood cells work to
+                        spread oxygen throughout the body. Enter one of the billions of living
+                        cells inside our body and learn how the organelles work together to
                         fight deadly viruses.
                     </p>
                     <button type="button" class="btn btn-secondary">READ MORE</button>
@@ -314,32 +321,32 @@
                 <h3 class="text-left">The Space Discovery</h3>
             </div>
             <div class="row">
-              <div class="col-sm-3">
-                <div class="featuredCard">
-                  <img src="./images/apps-games/space1.png"><br>
-                  <strong>Our Solar System</strong><br>
-                  <small>$29.99 USD</small>
-                </div>
-                </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/space2.png"><br>
-                    <strong>The Moon</strong><br>
-                    <small>$29.99 USD</small>
-                    </div>
-                </div>              
-                <div class="col-sm-3">
-                    <div class="featuredCard">
-                    <img src="./images/apps-games/space3.png"><br>
-                    <strong>Mars</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/space1.png"><br>
+                        <strong>Our Solar System</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="featuredCard">
-                    <img src="./images/apps-games/space4.png"><br>
-                    <strong>Apollo 11 VR Mobile</strong><br>
-                    <small>$29.99 USD</small>
+                        <img src="./images/apps-games/space2.png"><br>
+                        <strong>The Moon</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/space3.png"><br>
+                        <strong>Mars</strong><br>
+                        <small>$29.99 USD</small>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="featuredCard">
+                        <img src="./images/apps-games/space4.png"><br>
+                        <strong>Apollo 11 VR Mobile</strong><br>
+                        <small>$29.99 USD</small>
                     </div>
                 </div>
             </div>
@@ -347,59 +354,60 @@
 
     </main>
     <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container-fluid footerBg">
+        <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-12">
-                <img src="./images/logo.png">
-              </div>
+                <div class="container-fluid footerBg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="./images/logo.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p>See new ways to work better together with the ultimate extended</p>
+                                +1 (111) 000-1010 <br>
+                                San Francisco <br>
+                                1 Sansome Street, Suite 3500 – PMB# 21819<br>
+                                San Francisco, CA 94104
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p> User Links</p>
+                                <ul>
+                                    <li><a href="">Products</a></li>
+                                    <li><a href="">Industry</a></li>
+                                    <li><a href="">Development</a></li>
+                                    <li><a href="">Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="footerCard">
+                                <p>Have queries? Send them over!</p>
+                                <input type="text" placeholder="Email" />
+                                <textarea rows="3" col="200" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-              <div class="col-sm-4">
-                <div class="footerCard">              
-                  <p>See new ways to work better together with the ultimate extended</p>
-                  +1 (111) 000-1010 <br>
-                  San Francisco <br>
-                  1 Sansome Street, Suite 3500 – PMB# 21819<br>
-                  San Francisco, CA 94104
+                <div class="container-fluid copyright">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+                            <div class="socialIcons"><img src="./images/fb.png"></div>
+                            <div class="socialIcons"><img src="./images/linkedin.png"></div>
+                            <div class="socialIcons"><img src="./images/twitter.png"></div>
+                        </div>
+                        <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p> User Links</p>
-                  <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">Services</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p>Have queries? Send them over!</p>
-                   <input type="text" placeholder="Email"/>
-                   <textarea rows="3" col="200" placeholder="Message"></textarea>
-                </div>
-              </div> 
             </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="container-fluid copyright">
-            <div class="row">
-              <div class="col-sm-4 text-left">
-                <div class="socialIcons"><img src="./images/fb.png"></div>
-                <div class="socialIcons"><img src="./images/linkedin.png"></div>
-                <div class="socialIcons"><img src="./images/twitter.png"></div>
-              </div>
-              <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
     </footer>
-  </body>
+</body>
+
 </html>
