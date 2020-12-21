@@ -4,14 +4,14 @@
     font-family: 'Product Sans Medium Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Product Sans Medium Regular'), url('ProductSans-Medium.woff') format('woff');
+    src: local('Product Sans Medium Regular'), url('../font/ProductSans-webfont/ProductSans-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Product Sans Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Product Sans Bold'), url('ProductSans-Bold.woff') format('woff');
+    src: local('Product Sans Bold'), url('../font/ProductSans-webfont/ProductSans-Bold.woff') format('woff');
 }
 
 h1,
@@ -49,11 +49,11 @@ body {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .section-sm {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 
 .bg-dark1 {
@@ -165,6 +165,15 @@ ul .dropdown-menu {
     box-shadow: 0px 6px 84px #375ae85e;
     border-radius: 4px;
     opacity: 1;
+}
+
+.btn-outline-primary{
+    color: white;
+    border-color: #4239E7; 
+}
+
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active{
+    background-color: #4239E7;
 }
 
 .flat-btn {
