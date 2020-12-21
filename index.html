@@ -1,423 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>XReality</title>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Bootstrap CDN-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-	<!--External CSS-->
-	<link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
-<body>
-	<!--Navigation bar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400" role="navigation">
-		<div class="container">
-        <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            	<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-          	</button>
-          	<a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-			
-			<ul class="nav navbar-nav navbar-right">
-              	<li><a href="products.html">Products</a></li>
-				<li><a href="apps-games.html">Apps &amp; Games</a></li>
-              	<li><a href="industry.html">Industry</a></li>
-				<li><a href="development.html">Development</a></li>
-              	<li><a href="support.html">Support</a></li>
-              	<li><a href="cart.html"><img src="./images/cart.png"></a></li>
-			</ul>
-		</div>		
-      	</div>     
-    </nav>
-	<!--Navigation bar-->
+<body class="bg-dark1">
+	<header>
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-end navbar-blur py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="XReality"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse d-flex justify-content-end" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="products.html" data-toggle="dropdown"> Products </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="products.html"> Oculus Rift </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Hololences </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Magic Leap </a></li>
+                                <li><a class="dropdown-item" href="products.html"> HTC Vive </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="apps-games.html">Apps &amp; Games </a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="industry.html" data-toggle="dropdown"> Industry </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="industry.html"> Manufacturing </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Healthcare </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Education </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="development.html"> Development </a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html"> Support </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navigation End-->
+    </header>
 	<!--Banner-->
-	<header id="homeHeader">
-		<div class="container">
-        	<div class="row">
-        		<div class="col-12 text-left headerText">
-						<p>ALL YOUR BASE BELONG TO US</p>
-            			<h1>Getting your head in the game</h1>
-            		<div class="text-wrap headerLongText">
-						We keep current with all the relevant hardware from mobile VR, AR and XR experience to the most current and cutting edge.
-					</div>
-            		<div class="headerButtons">
-						<button class="btn btn-primary" type="submit">SHOP NOW</button>
-              			<button type="button" class="btn btn-secondary">LEARN MORE</button>
-            		</div>
-          		</div>
-        	</div>         
-		</div>
-	</header>
+    <section id="homeHeader" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex my-5">
+                    <div class="col-lg-5 col-md-8">
+                        <p>ALL YOUR BASE BELONG TO US</p>
+						<h1 class="h1">Getting your head in the game</h1>
+                        <p class="py-2">We keep current with all the relevant hardware from mobile VR, AR and XR experience to the most current and cutting edge.</p>
+						<button type="submit" class="btn btn-primary mt-3">SHOP NOW</button>
+						<button type="button" class="btn btn-outline-light mt-3">Read MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--Banner End-->
 	<!--Main-->
     <main>
-        <div class="container-fluid featureSection">
+		<!--Features-->
+    	<section class="section">
+			<div class="container features">
+				<div class="row d-flex justify-content-center">
+					<div class="col-lg-7 col-md-10">
+						<div class="text-center">
+							<p>WE ARE AN EMERGING TECH</p>
+							<h2>New Reality for Computing</h2>
+                        	<p class="pb-4">See new ways to work better together with the ultimate extended/mixed reality devices.</p>
+                    	</div>
+                	</div>
+            	</div>
+            	<div class="row row-cols-1 row-cols-md-3 g-4 ">
+					<div class="col d-flex align-items-stretch">
+						<div class="card shadow-sm bg-dark2 pt-4">
+							<img class="img-fluid mx-auto my-3" src="./images/features/improved-optics.png" alt="Optics">
+                        	<div class="card-body text-white">
+								<h3 class="card-title text-center my-4">Improved Optics</h3>
+                            	<p class="card-text text-center px-4">See action unfold with bright, vivid colours and a reduced "screen door" effect.</p>
+							</div>	
+                    	</div>
+                	</div>
+                	<div class="col d-flex align-items-stretch">
+						<div class="card shadow-sm bg-dark2 pt-4">
+							<img class="img-fluid mx-auto my-3" src="./images/features/ergonomic-design.png" alt="Optics">
+                        	<div class="card-body text-white">
+								<h3 class="card-title text-center my-4">Ergonomic Design</h3>
+                            	<p class="card-text text-center px-4">The halo headband is redesigned with speed and comfort in mind.</p>
+                        	</div>
+                    	</div>
+                	</div>
+					<div class="col d-flex align-items-stretch">
+						<div class="card shadow-sm bg-dark2 pt-4">
+							<img class="img-fluid mx-auto my-3" src="./images/features/touch-controller.png" alt="Optics">
+							<div class="card-body text-white">
+								<h3 class="card-title text-center my-4">360 Touch Controller</h3>
+                            	<p class="card-text text-center px-4">Your slashes, throws and grabs appear in VR with intuitive, realistic precision.</p>
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</section>
+		<!--Features End-->
+        <!--More Features-->
+		<section class="section">
+        <div class="container">
             <div class="row">
-                <small>WE ARE AN EMERGING TECH</small><br>
-                <h2 class="text-center">New Reality for Computing</h2>
-                <p>See new ways to work better together with the ultimate extended/mixed reality devices.</p>
-            </div>
-            <div class="row features">
-                <div class="col-sm-4">
-                    <div class="feature">
-                        <img src="./images/features/improved-optics.png" width="50px" height="50px"/>
-                        <div class="description">
-                          <h4>Improved Optics</h4>
-                          <p>See action unfold with bright, vivid colours and a reduced "screen door" effect.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="feature">
-                        <img src="./images/features/ergonomic-design.png" width="70px" height="50px"/>
-                        <div class="description">
-                          <h4>Ergonomic Design</h4>
-                          <p>The halo headband is redesigned with speed and comfort in mind.</p>
-                        </div>
-                    </div>
-                </div>              
-                <div class="col-sm-4">
-                    <div class="feature">
-                      <img src="./images/features/touch-controller.png" width="50px" height="50px"/>
-                      <div class="description">
-                        <h4>360 Touch Controller</h4>
-                        <p>Your slashes, throws and grabs appear in VR with intuitive, realistic precision.</p>
-                      </div>  
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid detailExplorerBg">
-          <div class="container-fluid detailExplorer">
-            <div class="row">
-              <div class="col-sm-6">
-                <small>EXPLORE EVERY NEW DETAIL</small><br>
-                <h2>Work Smarter and Were it with Ease &amp; Comfort</h2>
-                <p style="width:300px; word-wrap:break-word;">It offers the most comfortable and immersive mixed reality experience available, 
-                  with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, 
-                  security, and scalability of the cloud and AI services.</p>
-              </div>
-              <div class="col-sm-6">              
-                  <div class="row">
-                      <img src="./images/immersive.png" width="70px" height="70px" /><br>
-                      <p class="detailHeading">Immersive</p>
-                      <p class="detailText">
-                        See more holograms wiht greatly increased field of view. 
-                        Read text and see intricate details on 3D 
-                        images more easily and comfortably with industry-leading resolution.
-                      </p>
-                  </div>
-                  <div class="row">
-                    <img src="./images/instinctual.png" width="70px" height="70px" /><br>
-                    <p class="detailHeading">Unstinctual</p>
-                    <p class="detailText">
-                      Touch, grasp, and move holograms in ways that feel natural—they respond a 
-                      lot like real objects.
-                    </p>
-                  </div>
-                  <div class="row">
-                    <img src="./images/untethered.png" width="70px" height="70px" /><br>
-                    <p class="detailHeading">Untethered</p>
-                    <p class="detailText">
-                      Move freely, with no wires or external packs to get in your way. The headset is a self-contained computer 
-                      with Wi-Fi connectivity, which means that everything you need goes with you while you work.
-                    </p>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="container-fluid playExplore">
-          <div class="row">
-            <div class="col-sm-6">
-              <small>UNPLUG AND PLAY FOR REAL</small>
-              <h3>Play Explore Create</h3>
-              <p class="playExploreText">Experience Hundreds of gaming and exclusives in our incredible gaming library.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="playExplorerCard">
-                <img src="./images/Beat Saber.jpg" width="300px" height="370px">
-                <strong>Beat Saber</strong><br>
-                <small>$29.99 USD</small>
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="playExplorerCard">
-                <img src="./images/Layer 800.jpg" width="300px" height="370px">
-                <strong>Beat Saber</strong><br>
-                <small>$29.99 USD</small>
-              </div>
-          </div>              
-          <div class="col-sm-4">
-              <div class="playExplorerCard">
-                <img src="./images/Layer 794.jpg" width="300px" height="370px">
-                <strong>Beat Saber</strong><br>
-                <small>$29.99 USD</small>
-              </div>
-          </div>
-          </div>
-        </div>
-        <!-- PRODUCTS SECTION -->
-        <div class="container-fluid products">
-          <!-- PRODUCT SECTION HEADING -->
-          <div class="row">
-            <small>OTHER PRODUCTS</small><br>
-            <h2 class="text-center">Elevate Your XR Experience</h2>
-          </div>
-          <!-- PRODUCT CARDS -->
-          <div class="row">
-            <!-- LEFT CARD -->
-            <div class="col-sm-6" >
-              <div class="leftProductCard">
-                <div class="container-fluid">
-                  <div class="row productHeading">
-                    <div class="col-sm-10">
-                      <p>Quest 2 Elite Strap With Battery and Carrying Case</p>
-                    </div>
-                    <div class="col-sm-2">
-                      <img src="./images/share.png"/>
-                    </div>
-                  </div> 
-                  <div class="row">
-                    <img src="./images/product1.png" width="250px" height="250px"/>
-                  </div>
-                  <div class="row productPrice">
-                    <div class="col-sm-10">
-                      <small>$125 USD</small>
-                      <p>
-                        Add more playing time and ergonomic support with a built-in battery. 
-                        Quest 2 carrying case included.
-                      </p>
-                    </div>
-                    <div class="col-sm-2 productCart">
-                      <img src="./images/cart.png"/>
-                    </div>
-                  </div>                 
-                </div>
-              </div>
-            </div>
-            <!-- RIGHT SIDE 4 PRODUCTS CARDS -->
-            <div class="col-sm-6">
-              <div class="row">
-                <!-- PRODUCT 1 -->
-                <div class="col-sm-6">
-                  <div class ="productCard">
-                    <div class="container-fluid">
-                      <div class="row text-left">
-                        <div class="col-sm-8">
-                          <p>Link Cable 5M</p>
-                        </div>
-                        <div class="col-sm-2">
-                          <p><img src="./images/share.png"/></p>
-                        </div>
-                      </div>
-                      <div>
-                        <img src="./images/product2.png" width="70px" height="70px"/>
-                      </div>
-                      <div class="row text-left mt">
-                        <div class="col-sm-12">
-                          <small>$80 USD</small>
-                        </div>                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- PRODUCT 2 -->
-                <div class="col-sm-6">
-                  <div class ="productCard">
-                    <div class="container-fluid">
-                      <div class="row text-left">
-                        <div class="col-sm-8">
-                          <p>Touch Controllers</p>
-                        </div>
-                        <div class="col-sm-2">
-                          <p><img src="./images/share.png"/></p>
-                        </div>
-                      </div>
-                      <div>
-                        <img src="./images/product3.png" width="70px" height="70px"/>
-                      </div>
-                      <div class="row text-left mt">
-                        <div class="col-sm-12">
-                          <small>$80 USD</small>
-                        </div>                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- PRODUCT 3 -->
-                <div class="col-sm-6">
-                  <div class ="productCard">
-                    <div class="row text-left">
-                      <div class="col-sm-8">
-                        <p>Fit pack</p>
-                      </div>
-                      <div class="col-sm-2">
-                        <p><img src="./images/share.png"/></p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./images/product4.png" width="70px" height="70px"/>
-                    </div>
-                    <div class="row text-left mt">
-                      <div class="col-sm-12">
-                        <small>$80 USD</small>
-                      </div>                        
-                    </div>
-                  </div>
-                </div>
-                <!-- PRODUCT 4 -->
-                <div class="col-sm-6">
-                  <div class ="productCard">
-                    <div class="row text-left">
-                      <div class="col-sm-8">
-                        <p>Carrying case</p>
-                      </div>
-                      <div class="col-sm-2">
-                        <p><img src="./images/share.png"/></p>
-                      </div>
-                    </div>
-                    <div>
-                      <img src="./images/product5.png" width="70px" height="70px"/>
-                    </div>
-                    <div class="row text-left mt">
-                      <div class="col-sm-12">
-                        <small>$80 USD</small>
-                      </div>                        
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <button type="button" class="btn btnAccessories">VIEW ALL ACCESSORIES</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- VIDEO SECTION -->
-        <div class="container-fluid devBg">
-          <div class="container-fluid developmentContainer">
-            <div class="row">
-              <div class="col-sm-4">
-                <small>THE WORK WE DELIVER</small><br>
-                <h2>Development</h2>
-                <ul>
-                  <li>3D Concept Art</li>
-                  <li>3D UI Design and Development</li>
-                  <li>Design and Development</li>
-                  <li>Character Design</li>
-                </ul>
-                <button type="button" class="btn btn-secondary">Get IN TOUCH</button>
-              </div>
-              <div class="col-sm-8">              
                 <div class="row">
-<!--                    <img src="./images/video.jpg" width="630px">-->
+                    <div class="col-6">
+                        <p class="my-3">EXPLORE EVERY NEW DETAIL</p>
+						<h2>Work Smarter and Were it with Ease &amp; Comfort</h2>
+						<p class="my-3">It offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of the cloud and AI services.</p>
+						<button type="button" class="btn btn-outline-light mt-4">Read MORE</button>
+						<img src="./images/controler.png" id="featureImage">
+                    </div>
+                    <div class="col-6 ">
+                        <img src="./images/immersive.png"/>
+						<h3 class="mt-5">Immersive</h3>
+                        <p class="my-3">See more holograms wiht greatly increased field of view.Read text and see intricate details on 3D images more easily and comfortably with industry-leading resolution.</p><br>
+						
+						<img src="./images/instinctual.png"/>
+						<h3 class="mt-5">Unstinctual</h3>
+                        <p class="my-3">Touch, grasp, and move holograms in ways that feel natural—they respond a lot like real objects.</p><br>
+						
+						<img src="./images/untethered.png"/>
+						<h3 class="mt-5">Untethered</h3>
+                        <p class="my-3">Move freely, with no wires or external packs to get in your way. The headset is a self-contained computer with Wi-Fi connectivity, which means that everything you need goes with you while you work.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- BLOG SECTION -->
-        <div class="container-fluid blog">
-            <div class="row text-center">
-              <small>OUR BLOG</small>
-              <h2>Resources for businesses</h2>
+    	</section>
+		<!--More Features End-->
+		<!--Play Explore-->
+    	<section class="section-sm">
+        <div class="container" id="playExplore">
+            <p class="my-3">UNPLUG AND PLAY FOR REAL</p>
+			<h2>Play Explore Create</h2>
+			<p class="my-3">Experience Hundreds of gaming and exclusives in our incredible gaming library.</p>
+			
+            <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                <div class="col">
+                    <div class="card shadow-sm bg-dark1">
+                        <img class="img-fluid w-100 rounded" src="images/Beat Saber.jpg" alt="The witcher">
+                        <div class="">
+                            <h3 class="mt-4">Beat Saber</h3>
+                            <p class="text-muted">$29.99 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark1">
+                        <img class="img-fluid w-100 rounded" src="images/Layer 800.jpg" alt="The witcher">
+                        <div class="">
+                            <h3 class="mt-4">No Man's Sky</h3>
+                            <p class="text-muted">$27.99 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark1">
+                        <img class="img-fluid w-100 rounded" src="images/Layer 794.jpg" alt="The witcher">
+                        <div class="">
+                            <h3 class="mt-4">Titansall - 2</h3>
+                            <p class="text-muted">$15.99 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</section>
+		<!--Play Explore End-->
+		<!--Product Section-->
+    	<section class="section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 mb-2">
+                    <div class=" text-center ">
+                        <p class="pb-0">OTHER PRODUCTS</p>
+						<h2>Elevate Your XR Experience</h2>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="row">
+				<!--Column 1-->
+                <div class="col-6">
+                    <div class="card shadow-sm bg-dark2 p-5" id="cardHeightLeft">
+                        <img src="./images/product1.png" class="card-img img-fluid mt-5" alt="Azure Remote Rendering">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap">
+                            <div class="px-5">
+								<p class="mt-10">$125 USD</p>
+                                <h3 class="card-title align-baseline pt-10">Quest 2 Elite Strap With Battery and Carrying Case</h3>
+                                <p class="mt-10">Render high-quality interactive content and stream it to your devices in real time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<!--Column 2-->
+                <div class="col-3">
+					<div class="row">
+                    <div class="card shadow-sm bg-dark p-5 pt-2 pb-2" id="cardHeightRight">
+                        <img src="./images/product2.png" class="card-img img-fluid m-1 h-75" alt="Azure Remote Rendering">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap px-1 pb-0">
+                            <div class="px-5 pb-0">
+								<p class="mb-0">$80 USD</p>
+                                <h3 class="card-title align-baseline">Link Cable 5M</h3>
+                            </div>
+						</div>
+                    </div>
+					<div class="card shadow-sm bg-dark p-5 pt-2 pb-2 mt-4" id="cardHeightRight">
+                        <img src="./images/product3.png" class="card-img img-fluid m-1 h-75" alt="Azure Remote Rendering">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap px-1 pb-0">
+                            <div class="px-5 pb-0">
+								<p class="mb-0">$27 USD</p>
+                                <h3 class="card-title align-baseline">Fit Pack</h3>
+                            </div>
+						</div>
+                    </div>
+					</div>
+                </div>
+				<!--Column 3-->
+                <div class="col-3">
+					<div class="row">
+                    <div class="card shadow-sm bg-dark p-5 pt-2 pb-2 mx-3" id="cardHeightRight">
+                        <img src="./images/product4.png" class="card-img img-fluid m-1 h-75" alt="Azure Remote Rendering">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap px-1 pb-0">
+                            <div class="px-5 pb-0">
+								<p class="mb-0">$52 USD</p>
+                                <h3 class="card-title align-baseline">Controllers</h3>
+                            </div>
+						</div>
+                    </div>
+					<div class="card shadow-sm bg-dark p-5 pt-2 pb-2 mt-4 mx-3" id="cardHeightRight">
+                        <img src="./images/product5.png" class="card-img img-fluid m-1 h-75" alt="Azure Remote Rendering">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap px-1 pb-0">
+                            <div class="px-5 pb-0">
+								<p class="mb-0">$39 USD</p>
+                                <h3 class="card-title align-baseline">Case</h3>
+                            </div>
+						</div>
+                    </div>
+					</div>
+                </div>
+				<button type="button" class="btn btn-outline-light mt-4 mx-2">VIEW ALL ACCESSORIES</button>
+            </div>
+        </div>
+    	</section>
+		<!--Product Section End-->
+		<!--Video Section-->
+    	<section class="section-sm" id="videoSection">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-4 d-flex align-items-stretch ">
+                    <div class="card-body bg-dark2 p-5">
+						<p class="text-muted">THE WORK WE DELIVER</p>
+                        <h3 class="card-title">Development</h3>
+                        <p class="card-text my-3 text-muted">Our suite of immersive technologies and the science behind different methods.</p>
+                        <ul>
+                  			<li class="text-primary">3D Concept Art</li>
+                  			<li class="text-primary">3D UI Design and Development</li>
+                  			<li class="text-primary">Design and Development</li>
+                  			<li class="text-primary">Character Design</li>
+                		</ul>
+						<button type="button" class="btn btn-outline-light mt-4 justify-content-center">GET IN TOUCH</button>
+                    </div>
+                </div>
+				<div class="col-lg-8 col-md-12">
+                    <img class="img-responsive w-100" src="images/video.jpg" alt="Medal of honor">
+                </div>
+            </div>
+        </div>
+    	</section>
+		<!--Video Section End-->
+		<!--Blog Section-->
+		<!--    Blog-->
+    	<section class="section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-7">
+                    <div class=" text-center ">
+						<p>OUR BLOG</p>
+                        <h2 class="pb-2">Resources for businesses</h2>
+                    </div>
+                </div>
             </div>
             <div class="row">
-              <div class="col-sm-6">
-                  <div class='blog1'>
-                    <p>Gaming to a New Dimension</p>
-                  </div>
-              </div>
-              <div class="col-sm-6">
-                <div class='blog2'>
-                  <p>VR Fitness Is Exercise Without Effort</p>
+                <div class="col-6">
+                    <div class="card bg-dark">
+                        <img src="images/blog1.jpg" class="card-img img-fluid" alt="Azure Remote Rendering" width="540" height="370">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap">
+                            <div class="px-3">
+                                <h3 class="card-title ">Gaming to a New Dimension</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card bg-dark">
+                        <img src="images/blog2.jpg" class="card-img img-fluid" alt="Azure Object Anchors" width="540" height="370">
+                        <div class="card-img-overlay d-flex align-content-end flex-wrap">
+                            <div class="px-3">
+                                <h3 class="card-title ">VR Fitness Is Exercise Without Effort</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div class="row text-center">
-              <button type="button" class="btn btn-secondary">VIEW ALL</button>
+        </div>
+    	</section>
+		<!--Blog Section End-->
+    </main>
+	<!--Footer-->
+    <footer class="text-lg-start bg-dark2">
+        <div class="container pt-5">
+            <div class="row my-4">
+                <div class="col-lg-4 col-md-12 mb-6 mb-md-5">
+                    <div class="">
+                        <img src="./images/logo.png" class="pb-4">
+                        <p class="lead text-muted pb-3">See new ways to work better together with the ultimate extended</p>
+                        <div class="row">
+                            <div class="col-1">
+                                <img src="images/ic_call.svg" alt="call" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">+1 (111) 000-1010</p>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-1">
+                                <img src="images/ic_location.svg" alt="location" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-md-0 px-lg-5">
+                    <h3 class="pb-2">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Products</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Apps &amp; Games</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Industry</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Development</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Support</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+                    <h3 class="pb-2">Have queries? Send them over!</h3>
+                    <input class="form-control mb-3" type="text" placeholder="Email" aria-label="Search">
+                    <textarea class="form-control p-3" placeholder="Message" aria-label="default input example" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
             </div>
         </div>
-    </main>
-	<!-- Footer -->
-	<footer class="bg-light text-left text-lg-start footerBg" role="footer">
-		<!-- Grid container -->
-  		<div class="container p-4 footFirst">
-    		<!--Grid row-->
-    		<div class="row my-4">
-				
-      			<!--Grid column-->
-      			<div class="col-lg-5 col-md-12 mb-6 mb-md-0">
-        			<img src="./images/logo.png" class="footLogo">
-					<div class="halfOpacity">              
-						<p>See new ways to work better together with the ultimate extended</p>
-						<p class="footPhone">+1 (111) 000-1010</p> <br>
-						<p class="footAddress">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
-					</div>
-					<div>
-						<img src="./images/fb.png" class="socialIcons">
-						<img src="./images/linkedin.png" class="socialIcons">
-						<img src="./images/twitter.png" class="socialIcons">
-					</div><br>
-      			</div>
-      			<!--Grid column-->
-
-      			<!--Grid column-->
-      			<div class="col-lg-3 col-md-6 mb-4 mb-md-0 secondCol">
-        			<h5 class="text-uppercase">User Links</h5>
-					
-        			<ul class="list-unstyled mb-0">
-          				<li><a href="products.html" class="halfOpacity">Products</a></li>
-						<li><a href="apps-games.html" class="halfOpacity">Apps &amp; Games</a></li>
-						<li><a href="industry.html" class="halfOpacity">Industry</a></li>
-						<li><a href="development.html" class="halfOpacity">Development</a></li>
-						<li><a href="support.html" class="halfOpacity">Support</a></li>
-        			</ul><br>
-      			</div>
-      			<!--Grid column-->
-
-      			<!--Grid column-->
-      			<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        			<h5 class="text-uppercase mb-0">Have queries? Send them over!</h5>
-
-        			<input type="text" class="footTextbox" placeholder="Email"/><br>
-					<textarea rows="5" col="200" class="footTextbox" placeholder="Message"></textarea>
-      			</div>
-      			<!--Grid column-->
-    		</div>
-    		<!--Grid row-->
-  		</div>
-  		<!-- Grid container -->
-		
-		<!-- Grid container -->
-  		<div class="container-fluid text-center p-4 copyright">
-    		<!--Grid row-->
-    		<div class="row">
-      			<!--Grid column-->
-      			<div class="">
-					<p class="footNames">Created by <span class="footColor">Ruchi Singh, Divyarajsinh Jhala, Rahul Chaudhari</span> &#10003; &nbsp;All Rights Reserved.&nbsp;2020</p>
-      			</div>
-      			<!--Grid column-->
-    		</div>
-    		<!--Grid row-->
-  		</div>
-  		<!-- Grid container -->
-	</footer>
-	<!-- Footer -->
+        <div class="bg-dark1 mt-md-5 py-3">
+            <div class="container">
+                <p class="text-center m-0">&#10003; All Rights Reserved. © 2020. <br>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Ruchi Singh - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Divyarajsinh Jhala - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Rahul Chaudhari</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
 </body>
 </html>

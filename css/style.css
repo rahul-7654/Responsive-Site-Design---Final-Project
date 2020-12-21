@@ -104,8 +104,38 @@ ul .dropdown-menu {
     .navbar .nav-item .dropdown-menu {
         margin-top: 0;
     }
-
     /* Navbar */
+}
+@media all and (max-width: 768px) {
+	#homeHeader h1,p{
+		width: 60%;
+	}
+	#homeHeader button{
+		width: 50%;
+	}
+	.card-text{
+		width: 100%;
+	}
+	.features p{
+		width: 100%;
+	}
+	#cardHeightRight p{
+		font-size: 14px;
+		width: 100%;
+	}
+	#cardHeightRight h3{
+		font-size: 16px;
+		width: 150%;
+	}
+	#cardHeightRight img{
+		max-height: 210px;
+	}
+	#devHeader p{
+		width: 100%;
+	}
+	#devContent p{
+		width: 100%;
+	}
 }
 
 
@@ -164,8 +194,40 @@ ul .dropdown-menu {
 .category a:hover {
     color: #4239E7;
 }
-
-
+/*Home Page*/
+#homeHeader {
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding-top: 20px;
+    background-image: url("../images/Brightness_Contrast\ 1\ copy.jpg");
+	opacity: 1;
+    padding: 20% 0;
+    background-position: center;
+}
+#featureImage {
+	width: 100%;
+	background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;	
+}
+#playExplore {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/play-explore-bg.jpg');
+    opacity: 1;
+	padding: 10% 5%;
+}
+#cardHeightLeft{
+	height: 730px;
+}
+#cardHeightRight{
+	height: 350px;
+}
+#videoSection{
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../images/dev-bg.png');
+}
 /*industry*/
 #indHeader {
     background-size: cover;
@@ -225,16 +287,6 @@ ul .dropdown-menu {
 }
 
 /*-----------------------------------------------------------------------------*/
-#homeHeader {
-    height: 100%;
-    padding-top: 270px;
-    padding-left: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/Brightness_Contrast\ 1\ copy.jpg");
-}
-
 #productsHeader {
     height: 100%;
     padding-top: 270px;
@@ -285,50 +337,6 @@ ul .dropdown-menu {
     width: 240px;
     justify-content: center;
     word-wrap: break-word;
-}
-
-.detailExplorerBg {
-    background-color: #000000;
-    background-size: contain;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-image: url('../images/controler.png')
-}
-
-.detailExplorer {
-    color: white;
-    padding: 70px 200px;
-}
-
-.detailHeading {
-    padding-top: 10px;
-    color: #2A2693
-}
-
-.detailText {
-    width: 100%;
-}
-
-.playExplore {
-    color: white;
-    padding: 70px 190px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/play-explore-bg.jpg");
-}
-
-.playExploreText {
-    width: 300px;
-    word-wrap: break-word;
-    justify-content: center;
-}
-
-.playExplorerCard {
-    border-radius: 5px;
-    border: 1px solid #0D0D0D;
-    float: left;
-    width: 300px;
-    height: 370px;
 }
 
 .products {
@@ -421,15 +429,6 @@ ul .dropdown-menu {
     border-radius: 4px;
     opacity: 1;
 }
-
-.playExplore {
-    color: white;
-    padding: 70px 190px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../images/play-explore-bg.jpg");
-}
-
 /*Footer*/
 
 
