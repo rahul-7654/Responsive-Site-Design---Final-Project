@@ -4,15 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--External CSS-->
-	<link rel="stylesheet" href="./css/style.css">
-
-	<!--Bootstrap 3 CDN-->
-	
-	
-	<!--Bootstrap 5 CDN-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
@@ -20,32 +14,42 @@
 </head>
 
 <body class="bg-dark1">
-	<!--Navigation bar-->
-    <nav class="navbar navbar-inverse fixed-top nav-background" data-offset-top="400" role="navigation">
-		<div class="container">
-        <div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-            	<span class="sr-only">Toggle navigation</span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-            	<span class="icon-bar"></span>
-          	</button>
-          	<a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-			
-			<ul class="nav navbar-nav navbar-right">
-              	<li><a href="products.html">Products</a></li>
-				<li><a href="apps-games.html">Apps &amp; Games</a></li>
-              	<li><a href="industry.html">Industry</a></li>
-				<li><a href="development.html">Development</a></li>
-              	<li><a href="support.html">Support</a></li>
-              	<li><a href="cart.html"><img src="./images/cart.png"></a></li>
-			</ul>
-		</div>		
-      	</div>     
-    </nav>
-	<!--Navigation bar-->
+    <header>
+        <!--        Navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-end navbar-blur py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="XReality"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse d-flex justify-content-end" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="products.html" data-toggle="dropdown"> Products </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="products.html"> Oculus Rift </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Hololences </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Magic Leap </a></li>
+                                <li><a class="dropdown-item" href="products.html"> HTC Vive </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="apps-games.html">Apps &amp; Games </a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="industry.html" data-toggle="dropdown"> Industry </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="industry.html"> Manufacturing </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Healthcare </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Education </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="development.html"> Development </a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html"> Support </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--        Navigation End-->
+    </header>
     <section class="section">
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -78,9 +82,9 @@
     </section>
 
     <!--    Categories tabls-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="mb-5">Categories</h1>
+            <h2 class="mb-5">Categories</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 ">
                 <div class="col">
                     <div class="card shadow-sm bg-dark2">
@@ -123,10 +127,10 @@
     </section>
 
     <!--    Featured Games-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Featured &amp; Recommended</h1>
-            <div class="text-right my-4">
+            <h2 class="">Featured &amp; Recommended</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-3 g-4 ">
@@ -162,10 +166,10 @@
     </section>
 
     <!--    Top Selling-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Top Selling</h1>
-            <div class="text-right my-4">
+            <h2 class="">Top Selling</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
@@ -211,7 +215,7 @@
     </section>
 
     <!--    mid-banner-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-8 col-md-12">
@@ -230,10 +234,10 @@
     </section>
 
     <!--    Multiplayer & Social-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Multiplayer &amp; Social</h1>
-            <div class="text-right my-4">
+            <h2 class="">Multiplayer &amp; Social</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
@@ -279,10 +283,10 @@
     </section>
 
     <!--    Action & Adventure-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Action &amp; Adventure</h1>
-            <div class="text-right my-4">
+            <h2 class="">Action &amp; Adventure</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
@@ -328,10 +332,10 @@
     </section>
 
     <!--   Travel The World-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Travel The World</h1>
-            <div class="text-right my-4">
+            <h2 class="">Travel The World</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
@@ -377,7 +381,7 @@
     </section>
 
     <!--    mid-banner-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-8 col-md-12">
@@ -396,10 +400,10 @@
     </section>
 
     <!--   Space Discovery-->
-    <section class="section">
+    <section class="section-sm">
         <div class="container">
-            <h1 class="">Space Discovery</h1>
-            <div class="text-right my-4">
+            <h2 class="">Space Discovery</h2>
+            <div class="d-flex justify-content-end my-4">
                 <a href="#" class="flat-btn">See All ></a>
             </div>
             <div class="row row-cols-1 row-cols-md-4 g-4 ">
@@ -444,7 +448,60 @@
         </div>
     </section>
 
-    <!--Footer-->
+    <!--    Footer-->
+    <footer class="text-lg-start bg-dark2" role="footer">
+        <div class="container pt-5">
+            <div class="row my-4">
+                <div class="col-lg-4 col-md-12 mb-6 mb-md-5">
+                    <div class="">
+                        <img src="./images/logo.png" class="pb-4">
+                        <p class="lead text-muted pb-3">See new ways to work better together with the ultimate extended</p>
+                        <div class="row">
+                            <div class="col-1">
+                                <img src="images/ic_call.svg" alt="call" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">+1 (111) 000-1010</p>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-1">
+                                <img src="images/ic_location.svg" alt="location" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-md-0 px-lg-5">
+                    <h3 class="pb-2">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Products</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Apps &amp; Games</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Industry</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Development</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Support</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+                    <h3 class="pb-2">Have queries? Send them over!</h3>
+                    <input class="form-control mb-3" type="text" placeholder="Email" aria-label="Search">
+                    <textarea class="form-control p-3" placeholder="Message" aria-label="default input example" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark1 mt-md-5 py-3">
+            <div class="container">
+                <p class="text-center m-0">&#10003; All Rights Reserved. © 2020. <br>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Ruchi Singh - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Divyarajsinh Jhala - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Rahul Chaudhari</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
 </body>
 
 </html>
