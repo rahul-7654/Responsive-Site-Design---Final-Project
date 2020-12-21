@@ -1,0 +1,32 @@
+My work logs
+
+9th Dec 
+- Decided each one's part of work.
+- I got two pages to work on - Apps & Games and Industry.
+- Looked into pages mockups and discussed over different aspects of website
+  such as usage of bootstrap, making website responsive and assigning roles.
+
+10th Dec
+- Started working on Apps & Games page
+- Build carousel in header.
+- Helped other team members
+
+11th Dec
+- Worked on the main content of the page.
+- We used section throught the application. In apps & games, there are 9 sections, out of which I worked on only 2 sections
+- Helped other team members and discussed problems I faced
+
+12th - 16th Dec
+- Finished working on Apps & Games page
+- Made it fully responsive for tablet version
+
+17th- 19th Dec
+- Worked on Development Page along with making it responsive.
+
+20th Dec
+- Tested full website with other team members on differnt browsers.
+
+- Github Repo Link:
+https://github.com/rahul-7654/Responsive-Site-Design---Final-Project.git
+
+
