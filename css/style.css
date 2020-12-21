@@ -52,9 +52,10 @@ body {
     padding: 100px 0;
 }
 
-.section-sm{
+.section-sm {
     padding: 60px 0;
 }
+
 .bg-dark1 {
     background-color: #010103;
 }
@@ -177,6 +178,85 @@ ul .dropdown-menu {
     padding: 16px;
 }
 
+/*Product Page------------- */
+
+/*Video*/
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+
+/*Table*/
+.sptable {
+    vertical-align: middle;
+}
+
+.sptable th {
+    padding-bottom: 42px;
+}
+
+
+.sptable td {
+    padding-bottom: 26px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin-bottom: 50px;
+    }
+
+
+    td {
+
+        border: none;
+        border-bottom: 1px solid #eeeeee17;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "System specification";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Recommended";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Minimum";
+    }
+}
+
 /*App & games*/
 .category {
     text-align: center;
@@ -274,7 +354,7 @@ ul .dropdown-menu {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    
+
 }
 
 .fa:hover {
