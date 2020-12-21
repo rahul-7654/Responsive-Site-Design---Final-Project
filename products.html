@@ -1,410 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header id="productsHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-left headerText">
-            <p>THE NEXT LEVEL OF VR</p>
-            <h1>A Thousand Breakthroughs in One</h1>
-            <div class="text-wrap headerLongText">
-                The most comfortable and immersive VR & mixed reality experience available, 
-                with industry-leading solutions that deliver value in minutes—all enhanced 
-                by the reliability, security, and scalability of the cloud and AI services.
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <title>XReality: Products</title>
+</head>
+
+<body class="bg-dark1">
+    <header>
+        <!--        Navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex justify-content-end navbar-blur py-3">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="XReality"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse d-flex justify-content-end" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="products.html" data-toggle="dropdown"> Products </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="products.html"> Oculus Rift </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Hololences </a></li>
+                                <li><a class="dropdown-item" href="products.html"> Magic Leap </a></li>
+                                <li><a class="dropdown-item" href="products.html"> HTC Vive </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link" href="apps-games.html">Apps &amp; Games </a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="industry.html" data-toggle="dropdown"> Industry </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="industry.html"> Manufacturing </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Healthcare </a></li>
+                                <li><a class="dropdown-item" href="industry.html"> Education </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="development.html"> Development </a></li>
+                        <li class="nav-item"><a class="nav-link" href="support.html"> Support </a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>         
-      </div>
+        </nav>
+        <!--        Navigation End-->
     </header>
-    <!-- <nav class="navbar navbar-expand-sm sticky-top navbar-light nav-background"> -->
-    <nav class="navbar navbar-inverse navbar-fixed-top nav-background" data-offset-top="400">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Apps & Games</a></li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industry<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#">Link 1</a></li>
-                      <li><a href="#">Link 2</a></li>
-                      <li><a href="#">Link 3</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li><a href="#">Separated Link 4</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#"><img src="./images/search.png"></a></li>
-              <li><a href="#"><img src="./images/cart.png"></a></li>
-          </ul>
-        </div>		
-      </div>     
-    </nav>
-    <main>
-        <!-- Product Section -->
-        <div class="container-fluid productSection">
-            <div class="row">
-                <div class="col-sm-6 pc-powered-text">
-                    <small>PC-POWERED VR TECHNOLOGY</small>
-                    <h3>A Step Forwards in VR</h3>
-                    <p>
-                        It Insight translates your movements into VR no matter which way you're 
-                        facing and provides roomscale tracking without external sensors. 
-                        Look around, duck for cover and turn the tide of the battle from anywhere 
-                        in your playing space.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="pc-powered"></div>
-                </div>
-            </div>
-            <div class="row">                
-                <div class="col-sm-6">
-                    <div class="lenses"></div>
-                </div>
-                <div class="col-sm-6 pc-powered-text">
-                    <small>IMPROVED OPTICS</small>
-                    <h3>Staring Down to the Competition</h3>
-                    <p>
-                        Next-generation lenses and a sharper display deliver bright, vivid colours 
-                        and a reduced "screen-door" effect. The advanced hardware works with Oculus 
-                        software innovations to render smooth gameplay on a wide range of PCs..
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 pc-powered-text">
-                    <small>ERGONOMIC DESIGN</small>
-                    <h3>Keep Your Head in the Game</h3>
-                    <p>
-                        Thanks to a halo headband redesigned with speed in mind. Rift S stays securely 
-                        and comfortably in place with a quick twist of the fit wheel, so it can take, 
-                        or double-take, your fastest reactions.
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <div class="headband"></div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Feature Section -->
-        <div class="container-fluid productSection">
+    <!--    Banner -->
+    <!-- The video -->
+
+    <section id="" class="section">
+         <div class="container">
             <div class="row">
-                <div class="col-sm-3 text-center">
-                    <img src="./images/products/wide.png"><br>
-                    <small>Wide</small>
-                    <h5>50 Degree</h5>
-                    <p>field of view</p>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <img src="./images/products/high-reso.png"><br>
-                    <small>High Resolution</small>
-                    <h5>1.3M pixels</h5>
-                    <p>per eye</p>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <img src="./images/products/superfast.png"><br>
-                    <small>Superfast</small>
-                    <h5>120Hz</h5>
-                    <p>refresh rate/p>
-                </div>
-                <div class="col-sm-3 text-center">
-                    <img src="./images/products/over.png"><br>
-                    <small>Over</small>
-                    <h5>16.8m</h5>
-                    <p>colors supported</p>
+                <div class="d-flex my-5 position-relative">
+                    <div class="col-lg-5 col-md-8">
+                        <p>THE NEXT LEAVEL OF VR</p>
+                        <h1 class="h1">A Thousand Breakthroughs in One</h1>
+                        <p class="py-2">The most comfortable and immersive VR &amp; mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of the cloud and AI services.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- SHOP SECTION -->
-        <div class="container-fluid products">
-          <!-- PRODUCT SECTION HEADING -->
-          <div class="row">
-            <small>SHOP</small><br>
-            <h2 class="text-center">Step into the Center of our Best VR Experience</h2>
-          </div>
-          <!-- PRODUCT CARDS -->
-          <div class="row">
-            <!-- LEFT CARD -->
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="storage"></div>
-                </div>
-              </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="images/products/Product-bgvideo-1.mp4" type="video/mp4">
             
-            <!-- RIGHT SIDE CARD -->
-            <div class="col-sm-6" >
-               <div class="container-fluid productDetail">
-                    <div class="row text-left p20">
-                        <h4>STORAGE</h4>
-                        <small>Select a Quest 2 storage option.</small><br>
-                        <button class="btn btnMemory">128 GB</button>
-                        <button class="btn btnMemory">256 GB</button>
-                        <h4>UPGRADE YOUR STRAP</h4>
-                        <small>(standard head strap included)</small>
-                    </div>
+        </video>
+       
+    </section>
 
-                    <div class="row text-left p20">
-                        <div class="col-sm-6 text-left">
-                            Quest 2 Elite Strap With Battery Pack and Carrying Case
-                        </div>
-                        <div class="col-sm-6 text-right">$129 USD</div>
-                    </div>
-                    <div class="row text-left p20">
-                        <p>Up your game with enhanced comfort. The fit wheel can be quickly 
-                            adjusted to increase balance and support.</p>
-                        <p>ADD NOW</p>
-                    </div>
-                    <div class="row buy-now">
-                        <div class="container-fluid">
-                            <div class="col-sm-6 text-left">Buy Now</div>
-                            <div class="col-sm-6 text-right">$399 USD</div>
-                        </div>
-                    </div>
-               </div>
+
+    <!--Left image section-->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 p-lg-5 pb-md-5 align-self-center">
+                    <p>PC-POWERED VR TECHNOLOGY</p>
+                    <h2 class="">A Step Forwards in VR</h2>
+                    <p class="py-3">It Insight translates your movements into VR no matter which way you're facing and provides roomscale tracking without external sensors. Look around, duck for cover and turn the tide of the battle from anywhere in your playing space.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/products/pc-powered.png" alt="Pc-powered VR" width="725" height="665" class="img-fluid">
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="container-fluid specifications">
-            <div class="row text-left">
-                <small>TECH SPECS</small>
-                <h3>IS YOUR PC VR-READY?</h3>
-                <p></p>Your PC is the engine that powers Oculus Rift S. 
-                Show off the true potential of high-performance VR gameplay 
-                with our recommended level of hardware.
+    <!--    Right image section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-md-2">
+                    <img src="images/products/lenses.png" alt="Empower Care Teams" width="652" height="619" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 p-lg-5 pb-md-5 order-md-1 order-lg-2 align-self-center">
+                    <p>IMPROVED OPTICS</p>
+                    <h2 class="">Staring Down to the Competition</h2>
+                    <p class="py-3">Next-generation lenses and a sharper display deliver bright, vivid colours and a reduced "screen-door" effect. The advanced hardware works with Oculus software innovations to render smooth gameplay on a wide range of PCs.</p>
+
+                </div>
             </div>
-            <div class="row spec-card">
-                <div class="col-sm-4">
-                    <h4>System specification</h4>
-                    <ul>
-                        <li>CPU</li>
-                        <li>Graphic Card</li>
-                        <li>Alternative Graphics Card</li>
-                        <li>Memory</li>
-                        <li>Video Output</li>
-                        <li>USB Ports</li>
-                        <li>OS</li>
+        </div>
+    </section>
+
+    <!--Left image section-->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 p-lg-5 pb-md-5 align-self-center">
+                    <p>ERGONOMIC DESIGN</p>
+                    <h2 class="">Keep Your Head in the Game</h2>
+                    <p class="py-3">Thanks to a halo headband redesigned with speed in mind. Rift S stays securely and comfortably in place with a quick twist of the fit wheel, so it can take, or double-take, your fastest reactions.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/products/headband.png" alt="Enhance the Patient Experience" width="800" height="677" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    features cards-->
+    <section class="section bg-dark2">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4 ">
+                        <img class="img-fluid mx-auto " src="images/products/wide.png" alt="Wide view">
+                        <div class="card-body text-white text-center">
+                            <p class="mb-0 pt-2 text-muted">Wide</p>
+                            <h3 class="">50 Degree</h3>
+                            <p class="text-muted">field of view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4 ">
+                        <img class="img-fluid mx-auto " src="images/products/high-reso.png" alt="high-resolution">
+                        <div class="card-body text-white text-center">
+                            <p class="mb-0 pt-2 text-muted">High res</p>
+                            <h3 class="">1.3M pixels</h3>
+                            <p class="text-muted">per eye</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4 ">
+                        <img class="img-fluid mx-auto " src="images/products/superfast.png" alt="fast-refresh">
+                        <div class="card-body text-white text-center">
+                            <p class="mb-0 pt-2 text-muted">Superfast</p>
+                            <h3 class="">120Hz</h3>
+                            <p class="text-muted">refresh rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm bg-dark2 pt-4 ">
+                        <img class="img-fluid mx-auto " src="images/products/over.png" alt="colors">
+                        <div class="card-body text-white text-center">
+                            <p class="mb-0 pt-2 text-muted">Over</p>
+                            <h3 class="">16.8m</h3>
+                            <p class="text-muted">colors supported</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--   What’s Included -->
+    <section class="section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-7">
+                    <div class="text-center pb-4">
+                        <h2>What’s Included</h2>
+                    </div>
+                </div>
+            </div>
+            <img src="images/products/whats-included.jpg" alt="whats inside" class="img-fluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <p>ERGONOMIC DESIGN</p>
+                    <h2 class="">Keep Your Head in the Game</h2>
+                    <p class="py-3">Thanks to a halo headband redesigned with speed in mind. Rift S stays securely and comfortably in place with a quick twist of the fit wheel, so it can take, or double-take, your fastest reactions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card bg-dark2 p-5">
+                    <table class="sptable text-white">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-3 h4">System specification</th>
+                                <th scope="col" class="col-4 h4">Recommended</th>
+                                <th scope="col" class="col-4 h4">Minimum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CPU</td>
+                                <td>Intel i5-4590/AMD Ryzen 5 1500X or greater</td>
+                                <td>Intel i3-6100/AMD Ryzen 3 1200, FX4350 or greater</td>
+                            </tr>
+                            <tr>
+                                <td>Graphics Card</td>
+                                <td>NVIDIA GTX 1060/AMD Radeon RX 480 or greater</td>
+                                <td>NVIDIA GTX 1050Ti/AMD Radeon RX 470 or greater</td>
+                            </tr>
+                            <tr>
+                                <td>Alternative Graphics Card</td>
+                                <td>NVIDIA GTX 970/AMD Radeon R9 290 or greater</td>
+                                <td>NVIDIA GTX 960/AMD Radeon R9 290 or greater</td>
+                            </tr>
+                            <tr>
+                                <td>Memory</td>
+                                <td>16 GB+ RAM</td>
+                                <td>8 GB+ RAM</td>
+                            </tr>
+                            <tr>
+                                <td>Video Output</td>
+                                <td>DisplayPortTM 1.2/Mini DisplayPort (with adapter included in the box)</td>
+                                <td>DisplayPortTM 1.2/Mini DisplayPort (with adapter included in the box)</td>
+                            </tr>
+                            <tr>
+                                <td>USB Ports</td>
+                                <td>1 x USB 3.0 port</td>
+                                <td>1 x USB 3.0 port</td>
+                            </tr>
+                            <tr>
+                                <td>OS</td>
+                                <td>Windows 10</td>
+                                <td>Windows 10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    Footer-->
+    <footer class="text-lg-start bg-dark2">
+        <div class="container pt-5">
+            <div class="row my-4">
+                <div class="col-lg-4 col-md-12 mb-6 mb-md-5">
+                    <div class="">
+                        <img src="./images/logo.png" alt="XReality" class="pb-4">
+                        <p class="lead text-muted pb-3">See new ways to work better together with the ultimate extended</p>
+                        <div class="row">
+                            <div class="col-1">
+                                <img src="images/ic_call.svg" alt="call" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">+1 (111) 000-1010</p>
+                            </div>
+                        </div>
+                        <div class="row pt-2">
+                            <div class="col-1">
+                                <img src="images/ic_location.svg" alt="location" class="">
+                            </div>
+                            <div class="col-11">
+                                <p class="text-muted">San Francisco<br>1 Sansome Street, Suite 3500 – PMB# 21819<br>San Francisco, CA 94104</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-md-0 px-lg-5">
+                    <h3 class="pb-2">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Products</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Apps &amp; Games</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Industry</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Development</a></li>
+                        <li class="my-2"><a href="products.html" class="blockquote text-muted text-decoration-none text-light">Support</a></li>
+
                     </ul>
                 </div>
-                <div class="col-sm-4">
-                    <h4>Recommended</h4>
-                    <ul>
-                        <li>Intel i5-4590/AMD Ryzen 5 1500X or greater</li>
-                        <li>NVIDIA GTX 1060/AMD Radeon RX 480 or greater</li>
-                        <li>NVIDIA GTX 970/AMD Radeon R9 290 or greater</li>
-                        <li>16 GB+ RAM</li>
-                        <li>DisplayPortTM 1.2/Mini DisplayPort (with adapter included in the box)</li>
-                        <li>1 x USB 3.0 port</li>
-                        <li>Windows 10</li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Minimum</h4>
-                    <ul>
-                        <li>Intel i3-6100/AMD Ryzen 3 1200, FX4350 or greater</li>
-                        <li>NVIDIA GTX 1050Ti/AMD Radeon RX 470 or greater</li>
-                        <li>NVIDIA GTX 960/AMD Radeon R9 290 or greater</li>
-                        <li>8 GB+ RAM</li>
-                        <li>DisplayPortTM 1.2/Mini DisplayPort (with adapter included in the box)</li>
-                        <li>1 x USB 3.0 port</li>
-                        <li>Windows 10</li>
-                    </ul>
+                <div class="col-lg-4 col-md-8 mb-4 mb-md-0">
+                    <h3 class="pb-2">Have queries? Send them over!</h3>
+                    <input class="form-control mb-3" type="text" placeholder="Email" aria-label="Search">
+                    <textarea class="form-control p-3" placeholder="Message" aria-label="default input example" id="exampleFormControlTextarea1" rows="4"></textarea>
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid products">
-            <!-- PRODUCT SECTION HEADING -->
-            <div class="row">
-              <small>ACCESSORIES</small><br>
-              <h2 class="text-center">Elevate Your XR Experience</h2>
-            </div>
-            <!-- PRODUCT CARDS -->
-            <div class="row">
-                <!-- PRODUCT 1 -->
-                <div class="col-sm-4">
-                    <div class ="products-card">
-                        <div class="container-fluid">
-                        <div class="row text-left">
-                            <p>Link Cable 5M</p>
-                        </div>
-                        <div>
-                            <img src="./images/products/cable.png" width="100px" height="100px"/>
-                        </div>
-                        <div class="row text-left mt">
-                            <div class="col-sm-12">
-                            <small>$80 USD</small>
-                            </div>                        
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- PRODUCT 2 -->
-                <div class="col-sm-4">
-                <div class ="products-card">
-                    <div class="container-fluid">
-                    <div class="row text-left">
-                        <p>Touch Controllers</p>                          
-                    </div>
-                    <div>
-                        <img src="./images/products/touch-controller.png" width="100px" height="100px"/>
-                    </div>
-                    <div class="row text-left mt">
-                        <div class="col-sm-12">
-                        <small>$80 USD</small>
-                        </div>                        
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <!-- PRODUCT 3 -->
-                <div class="col-sm-4">
-                <div class ="products-card">
-                    <div class="row text-left">
-                        <p>Fit pack</p>
-                    </div>
-                    <div>
-                    <img src="./images/products/fit-pack.png" width="100px" height="100px"/>
-                    </div>
-                    <div class="row text-left mt">
-                    <div class="col-sm-12">
-                        <small>$80 USD</small>
-                    </div>                        
-                    </div>
-                </div>
-                </div>
-                <!-- PRODUCT 4 -->
-                <div class="col-sm-4">
-                <div class ="products-card">
-                    <div class="row text-left">
-                        <p>Carrying case</p>
-                    </div>
-                    <div>
-                    <img src="./images/products/case.png" width="100px" height="100px"/>
-                    </div>
-                    <div class="row text-left mt">
-                    <div class="col-sm-12">
-                        <small>$80 USD</small>
-                    </div>                        
-                    </div>
-                </div>
-                </div>
-                <!-- PRODUCT 5 -->
-                <div class="col-sm-4">
-                <div class ="products-card">
-                    <div class="row text-left">
-                        <p>Gaming Headset</p>
-                    </div>
-                    <div>
-                    <img src="./images/products/headset.png" width="100px" height="100px"/>
-                    </div>
-                    <div class="row text-left mt">
-                    <div class="col-sm-12">
-                        <small>$80 USD</small>
-                    </div>                        
-                    </div>
-                </div>
-                </div>
-                <div class="col-sm-4">
-                <div class ="products-card">
-                    <div class="row text-left">
-                        <p>Cover Facial Interface</p>
-                    </div>
-                    <div class="row text-center">
-                    <img src="./images/products/facial-cover.png" width="120px" height="120px"/>
-                    </div>
-                    <div class="row text-left">
-                        <small>$80 USD</small>  
-                    </div>
-                </div>
-                </div>  
+        <div class="bg-dark1 mt-md-5 py-3">
+            <div class="container">
+                <p class="text-center m-0">&#10003; All Rights Reserved. © 2020. <br>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Ruchi Singh - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Divyarajsinh Jhala - </a>
+                    <a href="mailto:webmaster@example.com" class="text-decoration-none text-muted"> Rahul Chaudhari</a>
+                </p>
             </div>
         </div>
-    </main>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container-fluid footerBg">
-            <div class="row">
-              <div class="col-sm-12">
-                <img src="./images/logo.png">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="footerCard">              
-                  <p>See new ways to work better together with the ultimate extended</p>
-                  +1 (111) 000-1010 <br>
-                  San Francisco <br>
-                  1 Sansome Street, Suite 3500 – PMB# 21819<br>
-                  San Francisco, CA 94104
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p> User Links</p>
-                  <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industry</a></li>
-                    <li><a href="">Development</a></li>
-                    <li><a href="">Services</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="footerCard">
-                  <p>Have queries? Send them over!</p>
-                   <input type="text" placeholder="Email"/>
-                   <textarea rows="3" col="200" placeholder="Message"></textarea>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="container-fluid copyright">
-            <div class="row">
-              <div class="col-sm-4 text-left">
-                <div class="socialIcons"><img src="./images/fb.png"></div>
-                <div class="socialIcons"><img src="./images/linkedin.png"></div>
-                <div class="socialIcons"><img src="./images/twitter.png"></div>
-              </div>
-              <div class="col-sm-8 text-left"><i>copyright @2020. All Rights Reserved.</i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </footer>
-  </body>
+    <!-- Footer -->
+</body>
+
 </html>
